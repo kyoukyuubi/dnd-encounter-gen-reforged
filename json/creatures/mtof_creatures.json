@@ -1,0 +1,13 @@
+{
+    "Creatures": [
+      {
+        "Name": "Leviathan",
+        "Type": "Elemental",
+        "Exp": 25000,
+        "Environment": ["Underwater", "Coastal"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 198
+      }
+    ]
+  }

@@ -1,0 +1,256 @@
+{
+    "Creatures": [
+      {
+        "Name": "Aboleth",
+        "Type": "Aberration",
+        "Exp": 5900,
+        "Environment": ["Underwater"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 12
+      },
+      {
+        "Name": "Beholder",
+        "Type": "Aberration",
+        "Exp": 10000,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 36
+      },
+      {
+        "Name": "Dire Wolf",
+        "Type": "Beast",
+        "Exp": 200,
+        "Environment": ["Forest", "Hill"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 352
+      },
+      {
+        "Name": "Swarm of Rats ",
+        "Type": "Beast",
+        "Exp": 50,
+        "Environment": ["Forest", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 370
+      },
+      {
+        "Name": "Unicorn",
+        "Type": "Celestial",
+        "Exp": 1800,
+        "Environment": ["Forest"],
+        "Plane": ["Feywild"],
+        "Book": "Monster Manual 2024",
+        "Page": 313
+      },
+      {
+        "Name": "Guardian Naga",
+        "Type": "Celestial",
+        "Exp": 5900,
+        "Environment": ["Desert", "Forest"],
+        "Plane": ["Upper Planes"],
+        "Book": "Monster Manual 2024",
+        "Page": 161
+      },
+      {
+        "Name": "Homunculus",
+        "Type": "Construct",
+        "Exp": 10,
+        "Environment": ["Artic", "Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Underwater", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 172
+      },
+      {
+        "Name": "Animated Broom",
+        "Type": "Construct",
+        "Exp": 50,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 16
+      },
+      {
+        "Name": "Dragon Turtle",
+        "Type": "Dragon",
+        "Exp": 18000,
+        "Environment": ["Coastal", "Underwater"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 103
+      },
+      {
+        "Name": "Ancient Silver Dragon",
+        "Type": "Dragon",
+        "Exp": 50000,
+        "Environment": ["Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 280
+      },
+      {
+        "Name": "Xorn",
+        "Type": "Elemental",
+        "Exp": 1800,
+        "Environment": ["Underdark"],
+        "Plane": ["Earth"],
+        "Book": "Monster Manual 2024",
+        "Page": 338
+      },
+      {
+        "Name": "Water Weird",
+        "Type": "Elemental",
+        "Exp": 700,
+        "Environment": ["Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 323
+      },
+      {
+        "Name": "Pixie",
+        "Type": "Fey",
+        "Exp": 50,
+        "Environment": ["Forest"],
+        "Plane": ["Feywild"],
+        "Book": "Monster Manual 2024",
+        "Page": 244
+      },
+      {
+        "Name": "Satyr Revelmaster",
+        "Type": "Fey",
+        "Exp": 2300,
+        "Environment": ["Forest"],
+        "Plane": ["Feywild"],
+        "Book": "Monster Manual 2024",
+        "Page": 268
+      },
+      {
+        "Name": "Arcanaloth",
+        "Type": "Fiend",
+        "Exp": 8400,
+        "Environment": [],
+        "Plane": ["Lower Planes"],
+        "Book": "Monster Manual 2024",
+        "Page": 19
+      },
+      {
+        "Name": "Oni",
+        "Type": "Fiend",
+        "Exp": 2900,
+        "Environment": ["Forest", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 232
+      },
+      {
+        "Name": "Cloud Giant",
+        "Type": "Giant",
+        "Exp": 5000,
+        "Environment": ["Mountain"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 74
+      },
+      {
+        "Name": "Troll",
+        "Type": "Giant",
+        "Exp": 1800,
+        "Environment": ["Artic", "Forest", "Hill", "Mountain", "Swamp", "Underdark"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 310
+      },
+      {
+        "Name": "Bandit",
+        "Type": "Humanoid",
+        "Exp": 25,
+        "Environment": ["Artic", "Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Underwater", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 27
+      },
+      {
+        "Name": "Mage",
+        "Type": "Humanoid",
+        "Exp": 2300,
+        "Environment": ["Artic", "Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Underwater", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 199
+      },
+      {
+        "Name": "Ankheg",
+        "Type": "Monstrosity",
+        "Exp": 450,
+        "Environment": ["Forest", "Grassland"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 18
+      },
+      {
+        "Name": "Stirge",
+        "Type": "Monstrosity",
+        "Exp": 25,
+        "Environment": ["Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 299
+      },
+      {
+        "Name": "Gelatinous Cube",
+        "Type": "Ooze",
+        "Exp": 450,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 129
+      },
+      {
+        "Name": "Blob of Annihilation",
+        "Type": "Ooze",
+        "Exp": 50000,
+        "Environment": ["Artic", "Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Underwater", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 47
+      },
+      {
+        "Name": "Awakened Shrub",
+        "Type": "Plant",
+        "Exp": 10,
+        "Environment": ["Forest"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 23
+      },
+      {
+        "Name": "Treant",
+        "Type": "Plant",
+        "Exp": 5000,
+        "Environment": ["Forest"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 308
+      },
+      {
+        "Name": "Banshee",
+        "Type": "Undead",
+        "Exp": 1100,
+        "Environment": ["Artic", "Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Underwater", "Urban"],
+        "Plane": [],
+        "Book": "Monster Manual 2024",
+        "Page": 29
+      },
+      {
+        "Name": "Zombie",
+        "Type": "Undead",
+        "Exp": 50,
+        "Environment": ["Underdark", "Urban"],
+        "Plane": ["Shadowfell"],
+        "Book": "Monster Manual 2024",
+        "Page": 308
+      }
+    ]
+  }
