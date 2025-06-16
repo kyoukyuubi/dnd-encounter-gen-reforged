@@ -1,10 +1,12 @@
 {
     "sources": [
         {
-            "name": "Monster Manual 2024"
+            "name": "Monster Manual 2024",
+            "filename": "mm2024_creatures"
         },
         {
-            "name": "Mordenkainens Tome of Foes"
+            "name": "Mordenkainens Tome of Foes",
+            "filename": "mtof_creatures"
         }
     ]
 }
