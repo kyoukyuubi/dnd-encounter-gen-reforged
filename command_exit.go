@@ -8,6 +8,7 @@ import (
 )
 
 func commandExit(cfg *Config, args ...string) error {
+	// updates the config file and handles errors
 	err := config.Update(cfg.Config)
 	if err != nil {
 		fmt.Printf("Exit code 1: %e\n", err)
@@ -15,6 +16,7 @@ func commandExit(cfg *Config, args ...string) error {
 		return err
 	}
 
+	// print a goodbye message and close the software
 	fmt.Println("Closing the Generator... Goodbye!")
 	os.Exit(0)
 
