@@ -26,3 +26,6 @@ go.work.sum
 
 # the binary itself
 dnd-encounter-gen-reforged
+
+# the config folder
+json/settings

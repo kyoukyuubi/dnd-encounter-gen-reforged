@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func commandHelp(config *Config, args ...string) error {
+func commandHelp(cfg *Config, args ...string) error {
 	fmt.Println("Welcome to the D&D Encounter Generator!")
 	fmt.Println("Usage:")
 	fmt.Println("")

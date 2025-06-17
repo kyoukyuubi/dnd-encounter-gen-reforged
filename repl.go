@@ -5,10 +5,12 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	"github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/config"
 )
 
 type Config struct {
-	// Add config loaded here
+	Config config.JsonConfig
 }
 
 func startRepl(config *Config) {

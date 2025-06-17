@@ -96,3 +96,23 @@ func Read() (JsonConfig, error) {
 	// return the JsonConfig struct
 	return config, nil
 }
+
+func Update(newConfig JsonConfig) error {
+	// set the path to the config file
+	fullpath := "json/settings/config.json"
+
+	// prepare the date to be written
+	data, err := json.Marshal(newConfig)
+	if err != nil {
+		return err
+	}
+
+	// write to the actual file
+	err = os.WriteFile(fullpath, data, 0644)
+	if err != nil {
+		return err
+	}
+
+	// return nil on success
+	return nil
+}

@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-    cfg := &Config{}
+    // cfg := &Config{}
 
 	// test the init function
 	config.Init()
@@ -18,7 +18,19 @@ func main() {
 	}
 
 	// checking if it worked
+	fmt.Println("Current file:")
 	fmt.Println(config)
+
+	cfg := &Config{
+		Config: config,
+	}
+
+	// update something in the cfg
+	cfg.Config.Level = 6
+	cfg.Config.MaxCreatures = 50
+	cfg.Config.Types = []string{"Human", "Ooze"}
+
+	fmt.Println("FILE UPDATED")
 
 	startRepl(cfg)
 }
