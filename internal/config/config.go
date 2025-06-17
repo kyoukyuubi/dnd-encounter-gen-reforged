@@ -2,6 +2,7 @@ package config
 
 import (
 	"encoding/json"
+	"io"
 	"os"
 	"path/filepath"
 )
@@ -27,7 +28,7 @@ func Init() {
 	filename := "config.json"
 	fullpath := filepath.Join(configFolder, filename)
 
-	// make the defualt struct
+	// make the default struct
 	defaultConfig := JsonConfig {
 		Planes: []string{},
 		Types: []string{},
@@ -62,4 +63,36 @@ func Init() {
     		panic(err)
 		}
 	}
+}
+
+func Read() (JsonConfig, error) {
+	// set the path to the config file
+	fullpath := "json/settings/config.json"
+
+	// read the file and open it
+	file, err := os.Open(fullpath)
+	if err != nil {
+		return JsonConfig{}, err
+	}
+
+	// make sure the file closes once function returns
+	defer file.Close()
+
+	// read the entire file
+	readFile, err := io.ReadAll(file)
+	if err != nil {
+		return JsonConfig{}, err
+	}
+
+	// initiate the struct
+	var config JsonConfig
+
+	// unmarshel into the struct
+	err = json.Unmarshal(readFile, &config)
+	if err != nil {
+		return JsonConfig{}, err
+	}
+
+	// return the JsonConfig struct
+	return config, nil
 }
