@@ -2,35 +2,30 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/config"
+	"github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/jsonHandler"
 )
 
 func main() {
-    // cfg := &Config{}
+	err := jsonHandler.Check()
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 
-	// test the init function
 	config.Init()
 
 	config, err := config.Read()
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
-
-	// checking if it worked
-	fmt.Println("Current file:")
-	fmt.Println(config)
 
 	cfg := &Config{
 		Config: config,
 	}
-
-	// update something in the cfg
-	cfg.Config.Level = 6
-	cfg.Config.MaxCreatures = 50
-	cfg.Config.Types = []string{"Human", "Ooze"}
-
-	fmt.Println("FILE UPDATED")
 
 	startRepl(cfg)
 }
