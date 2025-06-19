@@ -1,7 +1,8 @@
 package jsonHandler
 
 import (
-	"fmt"
+	// "fmt"
+	"errors"
 	"os"
 	"path/filepath"
 )
@@ -13,11 +14,6 @@ func Check() error {
 	// set the sub folder
 	subFolder := "creatures"
 
-	// check if the folder exists
-	if _, err := os.Stat(folder); os.IsNotExist(err) {
-		return fmt.Errorf("json folder not found")
-	}
-
 	// make a slice that contains all of the files that needs to be present for the filters to work
 	files := []string{"environments.json", "experience_table.json", "plane_catagories.json", "planes.json", "sources.json", "types.json"}
 
@@ -28,7 +24,9 @@ func Check() error {
 
 		// check if the file exists
 		if _, err := os.Stat(fullpath); os.IsNotExist(err) {
-			return fmt.Errorf("%s not found", file)
+			// errString := file + " is not found"
+			return errors.New("file not found")
+			// return fmt.Errorf("%s not found", file)
 		}
 	}
 
@@ -42,7 +40,8 @@ func Check() error {
 
 	// check if folder is empty, if it is return error
 	if len(entries) == 0 {
-		return fmt.Errorf("creatures folder is empty")
+		return errors.New("creatures folder is empty")
+		// return fmt.Errorf("creatures folder is empty")
 	}
 
 	return nil

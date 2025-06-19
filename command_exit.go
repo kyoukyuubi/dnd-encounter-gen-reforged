@@ -5,15 +5,15 @@ import (
 	"os"
 
 	"github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/config"
+	errorhandling "github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/errorHandling"
 )
 
 func commandExit(cfg *Config, args ...string) error {
 	// updates the config file and handles errors
 	err := config.Update(cfg.Config)
 	if err != nil {
-		fmt.Printf("Exit code 1: %e\n", err)
+		errorhandling.LogError(err, "commandExit")
 		os.Exit(1)
-		return err
 	}
 
 	// print a goodbye message and close the software

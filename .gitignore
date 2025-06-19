@@ -29,3 +29,6 @@ dnd-encounter-gen-reforged
 
 # the config folder
 json/settings
+
+# the logs folder
+json/logs

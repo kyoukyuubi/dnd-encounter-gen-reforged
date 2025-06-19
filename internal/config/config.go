@@ -5,6 +5,8 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+
+	errorhandling "github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/errorHandling"
 )
 
 // the structure of the config file with the json fields
@@ -44,7 +46,8 @@ func Init() {
 	// check if the folder exists, if not, create it
 	// if there is an error, panic to close the software
 	if err := os.MkdirAll(configFolder, 0755); err != nil {
-		panic(err)
+		errorhandling.LogError(err, "config.Init()")
+		os.Exit(1)
 	}
 
 	// check if the file exists, if not, creatite it
@@ -52,7 +55,8 @@ func Init() {
 	if _, err := os.Stat(fullpath); os.IsNotExist(err) {
 		file, err := os.Create(fullpath)
 		if err != nil {
-			panic(err)
+			errorhandling.LogError(err, "config.Init()")
+			os.Exit(1)
 		}
 
 		// make sure the file closes when function returns
@@ -60,7 +64,8 @@ func Init() {
 
 		// make the actual file
 		if err := json.NewEncoder(file).Encode(defaultConfig); err != nil {
-    		panic(err)
+			errorhandling.LogError(err, "config.Init()")
+			os.Exit(1)
 		}
 	}
 }
