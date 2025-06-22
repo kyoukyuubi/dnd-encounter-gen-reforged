@@ -81,6 +81,11 @@ func getCommands() map[string]cliCommand {
 			description: "displays this menu",
 			callback: commandHelp,
 		},
+		"level": {
+			name: "level <number (optional)>",
+			description: "set the desired level, default is 1. If no level is specified, prints the current set level",
+			callback: commandLevel,
+		},
 		"exit": {
 			name: "exit",
 			description: "safely exit the program",
