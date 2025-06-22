@@ -86,6 +86,11 @@ func getCommands() map[string]cliCommand {
 			description: "set the desired level, default is 1. If no level is specified, prints the current set level",
 			callback: commandLevel,
 		},
+		"type": {
+			name: "type <types seperated by spaces(optional)>",
+			description: "set the desiored types, default is any. If no types are specified, prints the current set types",
+			callback: commandType,
+		},
 		"exit": {
 			name: "exit",
 			description: "safely exit the program",
