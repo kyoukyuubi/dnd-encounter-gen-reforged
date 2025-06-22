@@ -1,58 +1,48 @@
 {
-    "planes": [
+    "Material Realms": [
+        "Feywild",
+        "Material Plane",
+        "Shadowfell"
+    ],
+    "Transitive Planes": [
+        "Astral Plane",
+        "Ethereal Plane"
+    ],
+    "Inner Planes": [
+        "Plane of Water",
+        "Plane of Ooze",
+        "Plane of Earth",
+        "Plane of Magma",
+        "Plane of Fire",
+        "Plane of Ashe",
+        "Plane of Air",
+        "Plane of Ice",
+        "Elemental Chaos"
+    ],
+    "Outer Planes": [
+        "Limbo",
+        "Mechanus",
+        "Outlands",
         {
-            "Material Realms": [
-                "Feywild",
-                "Material Plane",
-                "Shadowfell"
+            "Upper Planes": [
+                "Arborea",
+                "Arcadia",
+                "Beastlands",
+                "Bytopia",
+                "Elysium",
+                "Mount Celestia",
+                "Ysgard"
             ]
         },
         {
-            "Transitive Planes": [
-                "Astral Plane",
-                "Ethereal Plane"
-            ]
-        },
-        {
-            "Inner Planes": [
-                "Plane of Water",
-                "Plane of Ooze",
-                "Plane of Earth",
-                "Plane of Magma",
-                "Plane of Fire",
-                "Plane of Ashe",
-                "Plane of Air",
-                "Plane of Ice",
-                "Elemental Chaos"
-            ]
-        },
-        {
-            "Outer Planes": [
-                "Limbo",
-                "Mechanus",
-                "Outlands",
-                {
-                    "Upper Planes": [
-                        "Arborea",
-                        "Arcadia",
-                        "Beastlands",
-                        "Bytopia",
-                        "Elysium",
-                        "Mount Celestia",
-                        "Ysgard"
-                    ]
-                },
-                {
-                    "Lower Planes": [
-                        "Abyss",
-                        "Acheron",
-                        "Carceri",
-                        "Gehenna",
-                        "Hades",
-                        "Nine Hells",
-                        "Pandemonium"
-                    ]
-                }
+            "Lower Planes": [
+                "Abyss",
+                "Acheron",
+                "Carceri",
+                "Gehenna",
+                "Hades",
+                "Nine Hells",
+                "Pandemonium"
             ]
         }
     ]
