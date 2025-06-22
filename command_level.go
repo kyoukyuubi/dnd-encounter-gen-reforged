@@ -2,7 +2,10 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strconv"
+
+	errorhandling "github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/errorHandling"
 )
 
 func commandLevel(cfg *Config, args ...string) error {
@@ -15,7 +18,8 @@ func commandLevel(cfg *Config, args ...string) error {
 	// convert args[0] to int
 	inputInt, err := strconv.Atoi(args[0])
 	if err != nil {
-		return nil
+		errorhandling.LogError(err, "commandLevel")
+		os.Exit(1)
 	}
 
 	// check if the inputtet number is between 1 and 20
