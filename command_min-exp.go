@@ -14,8 +14,10 @@ func commandMinExp(cfg *Config, args ...string) error {
 		// if it is, print a msg telling the user that no minimum exp is set
 		if cfg.Config.MinExperience == 0 {
 			fmt.Println("No ammount of Minimum Experience set")
+			fmt.Println("")
 		} else {
 			fmt.Printf("Minimum Experience is set to: %d\n", cfg.Config.MinExperience)
+			fmt.Println("")
 		}
 		return nil
 	}
@@ -33,7 +35,7 @@ func commandMinExp(cfg *Config, args ...string) error {
 	// if so, reset the value and return
 	if inputInt == 0 || inputInt < 0 {
 		fmt.Println("Minimum Experience has been reset")
-		cfg.Config.MinExperience = inputInt
+		cfg.Config.MinExperience = 0
 		return nil
 	}
 
@@ -51,13 +53,16 @@ func commandMinExp(cfg *Config, args ...string) error {
 	// if it is, warn the user and set to min to the budget. If not, set to the inputtet number
 	if inputInt > budget {
 		fmt.Println("Your input is larger than your budget, setting Minimum Experience to budget.")
+		fmt.Println("")
 		fmt.Printf("Input: %d\n", inputInt)
 		fmt.Printf("Your current budget: %d\n", budget)
+		fmt.Println("")
 
 		// set the nim-exp to budget to prevent the user from going over
 		cfg.Config.MinExperience = budget
 	} else {
-		fmt.Printf("Setting Minimum Experience set to: %d", inputInt)
+		fmt.Printf("Setting Minimum Experience set to: %d\n", inputInt)
+		fmt.Println("")
 		cfg.Config.MinExperience = inputInt
 	}
 

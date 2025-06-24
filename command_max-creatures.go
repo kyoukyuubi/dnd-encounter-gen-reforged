@@ -14,8 +14,10 @@ func commandMaxCreatures(cfg *Config, args ...string) error {
 		// if it is, print a msg saying that it's set to any, if not, print current ammount
 		if cfg.Config.MaxCreatures == 0 {
 			fmt.Println("No ammount of Maximum Creatures set")
+			fmt.Println("")
 		} else {
 			fmt.Printf("Max Creatures is set to: %d\n", cfg.Config.MaxCreatures)
+			fmt.Println("")
 		}
 		return nil
 	}
@@ -33,12 +35,14 @@ func commandMaxCreatures(cfg *Config, args ...string) error {
 	// if so, reset the value and return
 	if inputInt == 0 || inputInt < 0 {
 		fmt.Println("Max Creatures has been reset")
-		cfg.Config.MaxCreatures = inputInt
+		fmt.Println("")
+		cfg.Config.MaxCreatures = 0
 		return nil
 	}
 
 	// store the new max creatuers in the config and display confirmation msg
 	fmt.Printf("Max Creatures set to: %d\n", inputInt)
+	fmt.Println("")
 	cfg.Config.MaxCreatures = inputInt
 
 	return nil
