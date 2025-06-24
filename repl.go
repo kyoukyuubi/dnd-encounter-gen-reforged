@@ -88,8 +88,23 @@ func getCommands() map[string]cliCommand {
 		},
 		"type": {
 			name: "type <types seperated by spaces(optional)>",
-			description: "set the desiored types, default is any. If no types are specified, prints the current set types",
+			description: "set the desiored types, default is any. If no types are specified, prints the current set types. To reset set the type to `any`",
 			callback: commandType,
+		},
+		"party-size": {
+			name: "party-size <number (optional)>",
+			description: "set the desired party size. If no size is specified prints the current set party size",
+			callback: commandPartySize,
+		},
+		"max-creatures": {
+			name: "max-creatures <number (optional)>",
+			description: "set the desired maximun ammount of creatures. If no ammount is specified, print the current set max. To resest this filter, set the size to 0.",
+			callback: commandMaxCreatures,
+		},
+		"min-exp": {
+			name: "min-exp <number (optional)>",
+			description: "set the desired minimun experience a creature can have. If no ammount is specified, print the current minumum. To reset this filter, set the minimum experience to 0.",
+			callback: commandMinExp,
 		},
 		"exit": {
 			name: "exit",
