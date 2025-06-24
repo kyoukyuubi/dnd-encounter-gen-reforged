@@ -10,7 +10,13 @@ import (
 func commandMinExp(cfg *Config, args ...string) error {
 	// check if args are empty, if so print the current value
 	if len(args) == 0 {
-		fmt.Printf("Minimum Experience is set to: %d\n", cfg.Config.MinExperience)
+		// check if MinExperience is set to 0
+		// if it is, print a msg telling the user that no minimum exp is set
+		if cfg.Config.MinExperience == 0 {
+			fmt.Println("No ammount of Minimum Experience set")
+		} else {
+			fmt.Printf("Minimum Experience is set to: %d\n", cfg.Config.MinExperience)
+		}
 		return nil
 	}
 

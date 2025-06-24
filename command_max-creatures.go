@@ -10,7 +10,13 @@ import (
 func commandMaxCreatures(cfg *Config, args ...string) error {
 	// check if args are empty, if so print the current value
 	if len(args) == 0 {
-		fmt.Printf("Max Creatures is set to: %d\n", cfg.Config.MaxCreatures)
+		// check if the MaxCreatures is 0
+		// if it is, print a msg saying that it's set to any, if not, print current ammount
+		if cfg.Config.MaxCreatures == 0 {
+			fmt.Println("No ammount of Maximum Creatures set")
+		} else {
+			fmt.Printf("Max Creatures is set to: %d\n", cfg.Config.MaxCreatures)
+		}
 		return nil
 	}
 
