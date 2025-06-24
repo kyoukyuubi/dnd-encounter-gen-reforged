@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"strconv"
 
 	errorhandling "github.com/kyoukyuubi/dnd-encounter-gen-reforged/internal/errorHandling"
@@ -11,7 +10,7 @@ import (
 func commandLevel(cfg *Config, args ...string) error {
 	// check if args are empty, if so print the current value
 	if len(args) == 0 {
-		fmt.Printf("level is set to %d\n", cfg.Config.Level)
+		fmt.Printf("level is set to: %d\n", cfg.Config.Level)
 		return nil
 	}
 
@@ -19,7 +18,9 @@ func commandLevel(cfg *Config, args ...string) error {
 	inputInt, err := strconv.Atoi(args[0])
 	if err != nil {
 		errorhandling.LogError(err, "commandLevel")
-		os.Exit(1)
+		fmt.Println("Error occurred, check the log in json/logs for details")
+		fmt.Println("")
+		return nil
 	}
 
 	// check if the inputtet number is between 1 and 20
@@ -28,8 +29,8 @@ func commandLevel(cfg *Config, args ...string) error {
 		return nil
 	}
 
-	// store the new number in the config and display confirmation msg
-	fmt.Printf("level set to %d\n", inputInt)
+	// store the new level in the config and display confirmation msg
+	fmt.Printf("level set to: %d\n", inputInt)
 	cfg.Config.Level = inputInt
 
 	return nil
