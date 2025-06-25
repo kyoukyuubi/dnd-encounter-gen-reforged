@@ -19,31 +19,29 @@
         "Plane of Ice",
         "Elemental Chaos"
     ],
-    "Outer Planes": [
-        "Limbo",
-        "Mechanus",
-        "Outlands",
-        {
-            "Upper Planes": [
-                "Arborea",
-                "Arcadia",
-                "Beastlands",
-                "Bytopia",
-                "Elysium",
-                "Mount Celestia",
-                "Ysgard"
-            ]
-        },
-        {
-            "Lower Planes": [
-                "Abyss",
-                "Acheron",
-                "Carceri",
-                "Gehenna",
-                "Hades",
-                "Nine Hells",
-                "Pandemonium"
-            ]
-        }
-    ]
+    "Outer Planes": {
+        "Neutral Planes": [
+            "Limbo",
+            "Mechanus",
+            "Outlands"
+        ],
+        "Upper Planes": [
+            "Arborea",
+            "Arcadia",
+            "Beastlands",
+            "Bytopia",
+            "Elysium",
+            "Mount Celestia",
+            "Ysgard"
+        ],
+        "Lower Planes": [
+            "Abyss",
+            "Acheron",
+            "Carceri",
+            "Gehenna",
+            "Hades",
+            "Nine Hells",
+            "Pandemonium"
+        ]
+    }
 }
