@@ -29,7 +29,7 @@ func commandType(cfg *Config, args ...string) error {
 
 	// if args is set to 'Any' reset the config to an empty slice
 	if args[0] == "any" {
-		fmt.Println("types has been reset to default value")
+		fmt.Println("Types has been reset to default value")
 		fmt.Println("")
 		cfg.Config.Types = []string{}
 		return nil
@@ -38,7 +38,7 @@ func commandType(cfg *Config, args ...string) error {
 	// load the types from the json file
 	types, err := jsonHandler.LoadTypes()
 	if err != nil {
-		errorhandling.LogError(err, "commandType")
+		errorhandling.LogError(err, "commandType/LoadTypes")
 		fmt.Println("Error occurred, check the log in json/logs for details")
 		fmt.Println("")
 		return nil
@@ -87,7 +87,7 @@ func commandType(cfg *Config, args ...string) error {
 		fmt.Println("")
 	} else {
 		fmt.Println("No matches were found in the determined types")
-		fmt.Println("types list was not altered")
+		fmt.Println("Types list was not altered")
 		fmt.Println("")
 	}
 
