@@ -23,6 +23,12 @@ func commandPartySize(cfg *Config, args ...string) error {
 		return nil
 	}
 
+	// check if the party-size is below 0
+	if inputInt <= 0 {
+		fmt.Println("Party Size must be above 0")
+		return nil
+	}
+
 	// store the new party size in the config and display confirmation msg
 	fmt.Printf("Party size set to: %d\n", inputInt)
 	cfg.Config.NumPlayers = inputInt
