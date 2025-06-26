@@ -46,3 +46,15 @@ func Check() error {
 
 	return nil
 }
+
+// helper function to call when comparing a string slice
+func CheckPrevious(slice []string, previous string) bool {
+	// loop through to see if there are any matches, if there is return true
+	for _, value := range slice {
+		if value == previous {
+			return false
+		}
+	}
+
+	return true
+}

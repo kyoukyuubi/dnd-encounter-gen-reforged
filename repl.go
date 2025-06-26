@@ -106,6 +106,11 @@ func getCommands() map[string]cliCommand {
 			description: "set the desired minimun experience a creature can have. If no ammount is specified, print the current minumum. To reset this filter, set the minimum experience to 0.",
 			callback: commandMinExp,
 		},
+		"plane": {
+			name: "plane",
+			description: "testing",
+			callback: commandPlane,
+		},
 		"exit": {
 			name: "exit",
 			description: "safely exit the program",
