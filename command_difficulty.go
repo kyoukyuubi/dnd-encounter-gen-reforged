@@ -35,23 +35,20 @@ func commandDifficulty(cfg *Config, args ...string) error {
 	// loop through the expData, only careing about the keys and see if input matches
 	// if it does, set it as the new difficulty
 	for _, input := range args {
-		matchFound := false
 		for key := range expData[levelString] {
 
 			// check if what was inputtet matches what was in the json file
 			// uses the value from the json file for error handling etc.
 			if strings.Contains(strings.ToLower(key), input) {
 				cfg.Config.Difficulty = key
-				matchFound = true
+				fmt.Printf("Difficulty set to: %s\n", key)
+				fmt.Println("")
+				return nil
 			}
-		}
-
-		// if no matches is found tell the user
-		if !matchFound {
-			fmt.Printf("%s was not found in the determined difficulties\n", input)
 		}
 	}
 
+	fmt.Printf("%s was not found in the determined difficulties\n", args[0])
 	fmt.Println("")
 	return nil
 }

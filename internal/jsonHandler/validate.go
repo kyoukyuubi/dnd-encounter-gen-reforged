@@ -15,7 +15,7 @@ func Check() error {
 	subFolder := "creatures"
 
 	// make a slice that contains all of the files that needs to be present for the filters to work
-	files := []string{"environments.json", "experience_table.json", "plane_catagories.json", "planes.json", "sources.json", "types.json"}
+	files := []string{"environments.json", "experience_table.json", "planes.json", "sources.json", "types.json"}
 
 	// loop through the slice checking all files
 	for _, file := range files {

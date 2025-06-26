@@ -10,7 +10,7 @@ func commandListFilters(cfg *Config, args ...string) error {
 	} else {
 		fmt.Println("Planes: ")
 
-		for _, plane := range cfg.Config.Sources {
+		for _, plane := range cfg.Config.Planes {
 			fmt.Printf("* %s\n", plane)
 		}
 	}
@@ -23,8 +23,8 @@ func commandListFilters(cfg *Config, args ...string) error {
 	} else {
 		fmt.Println("Type: ")
 
-		for _, env := range cfg.Config.Sources {
-			fmt.Printf("* %s\n", env)
+		for _, types := range cfg.Config.Types {
+			fmt.Printf("* %s\n", types)
 		}
 	}
 
@@ -65,11 +65,19 @@ func commandListFilters(cfg *Config, args ...string) error {
 	fmt.Println("")
 
 	// max creatures
-	fmt.Printf("Max amount of creatures: %v\n", cfg.Config.MaxCreatures)
+	if cfg.Config.MaxCreatures == 0 {
+		fmt.Println("Max amount of creatures: Any amount")
+	} else {
+		fmt.Printf("Max amount of creatures: %v\n", cfg.Config.MaxCreatures)
+	}
 	fmt.Println("")
 
 	// min exp
-	fmt.Printf("Min amount of experience: %v\n", cfg.Config.MinExperience)
+	if cfg.Config.MinExperience == 0 {
+		fmt.Println("Min amount of experience: Any amount")
+	} else {
+		fmt.Printf("Min amount of experience: %v\n", cfg.Config.MinExperience)
+	}
 	fmt.Println("")
 
 	// difficulty

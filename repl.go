@@ -81,15 +81,15 @@ func getCommands() map[string]cliCommand {
 			description: "displays this menu",
 			callback: commandHelp,
 		},
+		"list-filters": {
+			name: "list-filters",
+			description: "lists the current set filers",
+			callback: commandListFilters,
+		},
 		"level": {
 			name: "level <number (optional)>",
 			description: "set the desired level, default is 1. If no level is specified, prints the current set level",
 			callback: commandLevel,
-		},
-		"type": {
-			name: "type <types seperated by spaces(optional)>",
-			description: "set the desiored types, default is any. If no types are specified, prints the current set types. To reset set the type to `any`",
-			callback: commandType,
 		},
 		"party-size": {
 			name: "party-size <number (optional)>",
@@ -106,10 +106,30 @@ func getCommands() map[string]cliCommand {
 			description: "set the desired minimun experience a creature can have. If no ammount is specified, print the current minumum. To reset this filter, set the minimum experience to 0.",
 			callback: commandMinExp,
 		},
+		"type": {
+			name: "type <types seperated by spaces(optional)>",
+			description: "set the desiored types, default is any. If no types are specified, prints the current set types. To reset set the type to `any`",
+			callback: commandType,
+		},
 		"plane": {
-			name: "plane",
-			description: "testing",
+			name: "plane <planes seperated by space (optional)>",
+			description: "set the desired plane(s), default is any. If no planes are specified, prints what is currently set. To reset set the plane to 'any'",
 			callback: commandPlane,
+		},
+		"environment": {
+			name: "environment <environments seperated by space (optional)>",
+			description: "set the desired environment(s), default is any. If no environment are specified, prints what is currently set. To reset set the environment to 'any'",
+			callback: commandEnvironment,
+		},
+		"source": {
+			name: "source <sources seperated by space (optional)>",
+			description: "set the desired source(s), default is any. If no source are specified, prints what is currently set. To reset set the source to 'any'",
+			callback: commandSource,
+		},
+		"difficulty": {
+			name: "difficulty <desired difficulty(optional)>",
+			description: "set the desiored difficulty, default is any. If no difficulty are specified, prints the current set difficulty.",
+			callback: commandDifficulty,
 		},
 		"exit": {
 			name: "exit",
