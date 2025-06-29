@@ -78,7 +78,7 @@ func commandPlane(cfg *Config, args ...string) error {
 				if jsonHandler.CheckPrevious(sliceFound, previousSubCategory) {
 					sliceFound = append(sliceFound, value.SubCategory)
 					matchFound = true
-					previousCategory = value.SubCategory
+					previousSubCategory = value.SubCategory
 				}
 				continue
 			}
