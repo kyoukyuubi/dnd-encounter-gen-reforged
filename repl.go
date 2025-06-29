@@ -130,22 +130,22 @@ func getCommands() map[string]cliCommand {
 			callback: commandMinExp,
 		},
 		"type": {
-			name: "type <types seperated by spaces(optional)>",
+			name: "type <types seperated by comma (optional)>",
 			description: "set the desiored types, default is any. If no types are specified, prints the current set types. To reset set the type to `any`",
 			callback: commandType,
 		},
 		"plane": {
-			name: "plane <planes seperated by space (optional)>",
+			name: "plane <planes seperated by comma (optional)>",
 			description: "set the desired plane(s), default is any. If no planes are specified, prints what is currently set. To reset set the plane to 'any'",
 			callback: commandPlane,
 		},
 		"environment": {
-			name: "environment <environments seperated by space (optional)>",
+			name: "environment <environments seperated by comma (optional)>",
 			description: "set the desired environment(s), default is any. If no environment are specified, prints what is currently set. To reset set the environment to 'any'",
 			callback: commandEnvironment,
 		},
 		"source": {
-			name: "source <sources seperated by space (optional)>",
+			name: "source <sources seperated by comma (optional)>",
 			description: "set the desired source(s), default is any. If no source are specified, prints what is currently set. To reset set the source to 'any'",
 			callback: commandSource,
 		},
