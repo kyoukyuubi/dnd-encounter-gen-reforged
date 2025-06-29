@@ -81,6 +81,11 @@ func getCommands() map[string]cliCommand {
 			description: "displays this menu",
 			callback: commandHelp,
 		},
+		"list": {
+			name: "list <what to list e.g 'planes'",
+			description: "lists what can be used in the different filters. For example: 'types' list all the available types",
+			callback: commandList,
+		},
 		"list-filters": {
 			name: "list-filters",
 			description: "lists the current set filers",
@@ -130,6 +135,11 @@ func getCommands() map[string]cliCommand {
 			name: "difficulty <desired difficulty(optional)>",
 			description: "set the desiored difficulty, default is any. If no difficulty are specified, prints the current set difficulty.",
 			callback: commandDifficulty,
+		},
+		"reset": {
+			name: "reset",
+			description: "set the filters to their defualt state",
+			callback: commandReset,
 		},
 		"exit": {
 			name: "exit",
