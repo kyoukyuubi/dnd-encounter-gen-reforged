@@ -5,6 +5,7 @@ import (
 	"errors"
 	"os"
 	"path/filepath"
+	"slices"
 )
 
 func Check() error {
@@ -50,11 +51,16 @@ func Check() error {
 // helper function to call when comparing a string slice
 func CheckPrevious(slice []string, previous string) bool {
 	// loop through to see if there are any matches, if there is return true
-	for _, value := range slice {
+	/*for _, value := range slice {
 		if value == previous {
 			return false
 		}
 	}
 
 	return true
+	*/
+
+	// using slices to check if the slice contians the value from previous and return true or false
+	// use "!" to make sure to reverse the output (true becomes false etc.)
+	return !slices.Contains(slice, previous)
 }
