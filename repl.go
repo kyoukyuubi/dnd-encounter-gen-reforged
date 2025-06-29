@@ -27,18 +27,11 @@ func startRepl(config *Config) {
 		reader.Scan()
 
 		// store what was written after going through the "cleanInput" function
-		words := cleanInput(reader.Text())
+		commandName, args := cleanInput(reader.Text())
 
 		// skip empty input
-		if len(words) == 0 {
+		if commandName == "" {
 			continue
-		}
-
-		// parse command structure: first word is command, rest are arguments  
-		commandName := words[0]
-		args := []string{}
-		if len(words) > 1 {
-			args = words[1:]
 		}
 
 		// check if the command exists by calling the "GetCommands" function
@@ -59,11 +52,36 @@ func startRepl(config *Config) {
 	}
 }
 
-func cleanInput(text string) []string {
-	// normalize input: lowercase and split on whitespace for consistent parsing
-	output := strings.ToLower(text)
-	words := strings.Fields(output)
-	return words
+func cleanInput(text string) (string, []string) {
+	// trim the whitesapce around the text if any
+	text = strings.TrimSpace(text)
+
+	// split the first space, to seperate command from args
+	parts := strings.SplitN(text, " ", 2)
+
+	// check if args are supplied, if not return the command
+	if len(parts) == 1 {
+		return parts[0], []string{}
+	}
+
+	// store the command and args in 2 seperate values for easier use
+	command := strings.ToLower(parts[0])
+	argsString := parts[1]
+
+	// split the args by comma and trim white space
+	var args []string
+
+	if argsString != "" {
+		// split it by ","
+		rawArgs := strings.Split(argsString, ",")
+
+		// loop through and add them to the empty slice
+		for _, arg := range rawArgs {
+			args = append(args, strings.ToLower(strings.TrimSpace(arg)))
+		}
+	}
+
+	return command, args
 }
 
 // the command struct, stores data about the command and the function, using the signature
