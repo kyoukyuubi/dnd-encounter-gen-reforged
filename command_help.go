@@ -17,5 +17,13 @@ func commandHelp(cfg *Config, args ...string) error {
 		fmt.Println("")
 	}
 
+	fmt.Println("-----------------")
+	fmt.Println("example use of the generator")
+	fmt.Println("level 5")
+	fmt.Println("party-size 5")
+	fmt.Println("environment forest")
+	fmt.Println("generate")
+	fmt.Println("")
+
 	return nil
 }
