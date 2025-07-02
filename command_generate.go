@@ -174,6 +174,11 @@ func filterEnvironment(envirments []string, creatures jsonHandler.Creature) json
 				break 
 			}
 		}
+
+		// check if the creatures plane slice is empty, if it as add it. Since that means any
+		if len(creature.Environment) == 0 {
+			filtered = append(filtered, creature)
+		}
 	}
 
 	return jsonHandler.Creature{Creature: filtered}
@@ -200,7 +205,12 @@ func filterPlane(planes []string, creatures jsonHandler.Creature) jsonHandler.Cr
 
 				// break to avoid duplicates
 				break
-			}
+			} 
+		}
+
+		// check if the creatures plane slice is empty, if it as add it. Since that means any
+		if len(creature.Plane) == 0 {
+			filtered = append(filtered, creature)
 		}
 	}
 
