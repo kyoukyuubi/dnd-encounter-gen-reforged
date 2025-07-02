@@ -49,7 +49,7 @@ func commandListFilters(cfg *Config, args ...string) error {
 	} else {
 		fmt.Println("Environments: ")
 
-		for _, env := range cfg.Config.Sources {
+		for _, env := range cfg.Config.Environments {
 			fmt.Printf("* %s\n", env)
 		}
 	}

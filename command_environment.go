@@ -31,7 +31,7 @@ func commandEnvironment(cfg *Config, args ...string) error {
 	if args[0] == "any" {
 		fmt.Println("Environments has been reset to default value")
 		fmt.Println("")
-		cfg.Config.Types = []string{}
+		cfg.Config.Environments = []string{}
 		return nil
 	}
 
@@ -82,7 +82,7 @@ func commandEnvironment(cfg *Config, args ...string) error {
 
 		// loop through the created slice and print it in an unorederd list format
 		for _, e := range sliceFound {
-			fmt.Printf("* %s", e)
+			fmt.Printf("* %s\n", e)
 		}
 		fmt.Println("")
 	} else {

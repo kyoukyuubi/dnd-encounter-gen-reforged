@@ -31,7 +31,7 @@ func commandSource(cfg *Config, args ...string) error {
 	if args[0] == "any" {
 		fmt.Println("Sources has been reset to default value")
 		fmt.Println("")
-		cfg.Config.Types = []string{}
+		cfg.Config.Sources = []string{}
 		return nil
 	}
 
