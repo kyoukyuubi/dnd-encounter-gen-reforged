@@ -96,72 +96,77 @@ func getCommands() map[string]cliCommand {
 	return map[string]cliCommand {
 		"help": {
 			name: "help",
-			description: "displays this menu",
+			description: "Displays this help menu.",
 			callback: commandHelp,
 		},
 		"list": {
 			name: "list <what to list e.g 'planes'",
-			description: "lists what can be used in the different filters. For example: 'types' list all the available types",
+			description: "Lists available values for use in filters. For example, `list types` shows all valid creature types.",
 			callback: commandList,
 		},
 		"list-filters": {
 			name: "list-filters",
-			description: "lists the current set filers",
+			description: "Lists all currently active filters and their values.",
 			callback: commandListFilters,
 		},
 		"level": {
 			name: "level <number (optional)>",
-			description: "set the desired level, default is 1. If no level is specified, prints the current set level",
+			description: "Sets the desired level. If no level is specified, prints the current level.",
 			callback: commandLevel,
 		},
 		"party-size": {
 			name: "party-size <number (optional)>",
-			description: "set the desired party size. If no size is specified prints the current set party size",
+			description: "Sets the party size. If no size is specified, prints the current party size.",
 			callback: commandPartySize,
 		},
 		"max-creatures": {
 			name: "max-creatures <number (optional)>",
-			description: "set the desired maximun ammount of creatures. If no ammount is specified, print the current set max. To resest this filter, set the size to 0.",
+			description: "Sets the maximum number of creatures allowed (use 0 for no limit). If no amount is specified, prints the current maximum.",
 			callback: commandMaxCreatures,
 		},
 		"min-exp": {
 			name: "min-exp <number (optional)>",
-			description: "set the desired minimun experience a creature can have. If no ammount is specified, print the current minumum. To reset this filter, set the minimum experience to 0.",
+			description: "Sets the minimum experience a creature must have (use 0 to disable). If no amount is specified, prints the current minimum.",
 			callback: commandMinExp,
 		},
 		"type": {
 			name: "type <types seperated by comma (optional)>",
-			description: "set the desiored types, default is any. If no types are specified, prints the current set types. To reset set the type to `any`",
+			description: "Sets one or more desired creature types (separated by commas; default is any). If none are given, prints the current types. To reset, use `any`.",
 			callback: commandType,
 		},
 		"plane": {
 			name: "plane <planes seperated by comma (optional)>",
-			description: "set the desired plane(s), default is any. If no planes are specified, prints what is currently set. To reset set the plane to 'any'",
+			description: "Sets one or more planes (comma-separated; default is any). If none are given, prints the current planes. To reset, use `any`.",
 			callback: commandPlane,
 		},
 		"environment": {
 			name: "environment <environments seperated by comma (optional)>",
-			description: "set the desired environment(s), default is any. If no environment are specified, prints what is currently set. To reset set the environment to 'any'",
+			description: "Sets one or more environments (comma-separated; default is any). If none are given, prints the current environments. To reset, use `any`.",
 			callback: commandEnvironment,
 		},
 		"source": {
 			name: "source <sources seperated by comma (optional)>",
-			description: "set the desired source(s), default is any. If no source are specified, prints what is currently set. To reset set the source to 'any'",
+			description: "Sets one or more sources (comma-separated; default is any). If none are given, prints the current sources. To reset, use `any`.",
 			callback: commandSource,
 		},
 		"difficulty": {
 			name: "difficulty <desired difficulty(optional)>",
-			description: "set the desiored difficulty, default is any. If no difficulty are specified, prints the current set difficulty.",
+			description: "Sets the desired encounter difficulty (default is Moderate). If none is specified, prints the current difficulty.",
 			callback: commandDifficulty,
+		},
+		"generate": {
+			name: "generate",
+			description: "Generates a random encounter based on your current filters and settings. Each use creates a new encounter (previous results are not saved).",
+			callback: commandGenerate,
 		},
 		"reset": {
 			name: "reset",
-			description: "set the filters to their defualt state",
+			description: "Resets all filters to their default values.",
 			callback: commandReset,
 		},
 		"exit": {
 			name: "exit",
-			description: "safely exit the program",
+			description: "Safely exits the program.",
 			callback: commandExit,
 		},
 	}

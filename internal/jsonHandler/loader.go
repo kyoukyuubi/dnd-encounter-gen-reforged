@@ -2,6 +2,7 @@ package jsonHandler
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"os"
 )
@@ -43,6 +44,21 @@ type PlaneData struct {
 
 type Plane struct {
 	Plane []PlaneData `json:"planes"`
+}
+
+// struct for creatures
+type CreatureData struct {
+	Name string `json:"name"`
+	Type string `json:"type"`
+	Exp int `json:"Exp"`
+	Environment []string `json:"Environment"`
+	Plane []string `json:"plane"`
+	Book string `json:"book"`
+	Page int `json:"page"`
+}
+
+type Creature struct {
+	Creature []CreatureData `json:"creatures"`
 }
 
 func LoadExpTable() (map[string]map[string]int, error) {
@@ -214,4 +230,67 @@ func LoadPlanes() (Plane, error) {
 	}
 	
 	return fileContent, err
+}
+
+func LoadCreatures(cfgSources []string) (Creature, error) {
+	// set the main folder structure
+	dir := "json/creatures/"
+
+	// load the sources.json for loopup purposes
+	sources, err := LoadSources()
+	if err != nil {
+		return Creature{}, err
+	}
+
+	// make a slice to store the filepath for the loop
+	var filePath []string
+
+	// loop through and store the full paths in the slice
+	// If cfgSources is empty, include all source files
+	if len(cfgSources) == 0 {
+    	for _, source := range sources.Source {
+        	filePath = append(filePath, dir+source.Filename+".json")
+    	}
+	} else {
+    	for _, source := range sources.Source {
+        	for _, cfgSource := range cfgSources {
+            	if source.Name == cfgSource {
+                	path := dir + source.Filename + ".json"
+                	filePath = append(filePath, path)
+            	}
+	        }
+	    }
+	}
+
+	// check if the filePath is empty, if it is throw and error
+	if len(filePath) == 0 {
+    	return Creature{}, fmt.Errorf("no source files matched your selection: %v", cfgSources)
+	}
+
+	// make the var that stores the creatures
+	var creatures []CreatureData
+
+	// loop through the fileParh slice and load the creatures into a temp var
+	for _, path := range filePath {
+
+		// read the file
+		data, err := os.ReadFile(path)
+		if err != nil {
+			return Creature{}, err
+		}
+
+		// make a temp var to store the creatures
+		var tempCreatures Creature
+
+		// unmarshal the data
+		err = json.Unmarshal(data, &tempCreatures)
+		if err != nil {
+			return Creature{}, err
+		}
+
+		// store the data into the return var
+		creatures = append(creatures, tempCreatures.Creature...)
+	}
+
+	return Creature{Creature: creatures}, nil
 }
