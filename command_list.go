@@ -92,11 +92,15 @@ func listPlanes() {
 		}
 
 		// do the same check, but for the sub category
-		if previousSubCategory != plane.SubCategory {
+		// checking for no sub category too, to avoid printing issues
+		if previousSubCategory != plane.SubCategory && plane.SubCategory != "" {
 			// set the sub category for the next iteration of the loop
 			previousSubCategory = plane.SubCategory
 			fmt.Printf("  %s: \n", plane.SubCategory)
-		}
+		} else if plane.SubCategory == "" {
+    		// Reset previousSubCategory when we encounter an item with no subcategory
+    		previousSubCategory = ""
+}
 
 		if previousSubCategory == "" {
 			fmt.Printf("* %s\n", plane.Name)
