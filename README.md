@@ -9,7 +9,7 @@ This is a fan project, I am in now way affiliated with Wizards of the coast or D
 
 ## Installation
 
-Head over to the [releases](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/releases/tag/Release) page and download the latest release. Make sure that the exe and the json folder and filers are inside the same folder. It will throw and error which can useually be found inside json/logs folder. 
+Head over to the [releases](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/releases) page and download the latest release. Make sure that the exe and the json folder and filers are inside the same folder. It will throw and error which can useually be found inside json/logs folder. 
 
 If you don't see a logs folder, do not worry. The Program will make that on it's on, if an error has occurred.
 ## Usage/Examples
