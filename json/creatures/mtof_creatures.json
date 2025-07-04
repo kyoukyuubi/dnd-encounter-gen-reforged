@@ -1,13 +1,1255 @@
 {
     "Creatures": [
       {
+        "Name": "Abyssal Wretch",
+        "Type": "Fiend",
+        "Exp": 50,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 136
+      },
+      {
+        "Name": "Adult Kruthik",
+        "Type": "Monstrosity",
+        "Exp": 450,
+        "Environment": ["Desert", "Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 212
+      },
+      {
+        "Name": "Adult Oblex",
+        "Type": "Ooze",
+        "Exp": 1800,
+        "Environment": ["Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 218
+      },
+      {
+        "Name": "Air Elemental Myrmidon",
+        "Type": "Elemental",
+        "Exp": 202,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 202
+      },
+      {
+        "Name": "Alkilith",
+        "Type": "Fiend",
+        "Exp": 7200,
+        "Environment": ["Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 130
+      },
+      {
+        "Name": "Allip",
+        "Type": "Undead",
+        "Exp": 116,
+        "Environment": ["Swamp", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 116
+      },
+      {
+        "Name": "Amnizu",
+        "Type": "Fiend",
+        "Exp": 20000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 164
+      },
+      {
+        "Name": "Armanite",
+        "Type": "Fiend",
+        "Exp": 131,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 131
+      },
+      {
+        "Name": "Astral Dreadnought",
+        "Type": "Monstrosity",
+        "Exp": 33000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 117
+      },
+      {
+        "Name": "Autumn Eladrin",
+        "Type": "Fey",
+        "Exp": 5900,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 195
+      },
+      {
+        "Name": "Bael",
+        "Type": "Fiend",
+        "Exp": 22000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 170
+      },
+      {
+        "Name": "Balhannoth",
+        "Type": "Aberration",
+        "Exp": 7200,
+        "Environment": ["Coastal", "Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 119
+      },
+      {
+        "Name": "Baphomet",
+        "Type": "Fiend",
+        "Exp": 50000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 143
+      },
+      {
+        "Name": "Berbalang",
+        "Type": "Aberration",
+        "Exp": 450,
+        "Environment": ["Desert"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 120
+      },
+      {
+        "Name": "Black Abishai",
+        "Type": "Fiend",
+        "Exp": 2900,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 160
+      },
+      {
+        "Name": "Blue Abishai",
+        "Type": "Fiend",
+        "Exp": 18000,
+        "Environment": ["Coastal", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 161
+      },
+      {
+        "Name": "Boneclaw",
+        "Type": "Undead",
+        "Exp": 8400,
+        "Environment": ["Artic", "Desert", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 121
+      },
+      {
+        "Name": "Bronze Scout",
+        "Type": "Construct",
+        "Exp": 200,
+        "Environment": ["Forest", "Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 125
+      },
+      {
+        "Name": "Bulezau",
+        "Type": "Fiend",
+        "Exp": 700,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 131
+      },
+      {
+        "Name": "Cadaver Collector",
+        "Type": "Construct",
+        "Exp": 11500,
+        "Environment": ["Grassland"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 122
+      },
+      {
+        "Name": "Canoloth",
+        "Type": "Fiend",
+        "Exp": 3900,
+        "Environment": ["Coastal", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 247
+      },
+      {
+        "Name": "Choker",
+        "Type": "Aberration",
+        "Exp": 200,
+        "Environment": ["Forest", "Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 123
+      },
+      {
+        "Name": "Corpse Flower",
+        "Type": "Plant",
+        "Exp": 3900,
+        "Environment": ["Forest", "Swamp", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 127
+      },
+      {
+        "Name": "Deathlock",
+        "Type": "Undead",
+        "Exp": 1100,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 128
+      },
+      {
+        "Name": "Deathlock Mastermind",
+        "Type": "Undead",
+        "Exp": 129,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 129
+      },
+      {
+        "Name": "Deathlock Wight",
+        "Type": "Undead",
+        "Exp": 700,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 129
+      },
+      {
+        "Name": "Demogorgon",
+        "Type": "Fiend",
+        "Exp": 90000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 144
+      },
+      {
+        "Name": "Derro",
+        "Type": "Humanoid",
+        "Exp": 50,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 158
+      },
+      {
+        "Name": "Derro Savant",
+        "Type": "Humanoid",
+        "Exp": 700,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 159
+      },
+      {
+        "Name": "Dhergoloth",
+        "Type": "Fiend",
+        "Exp": 2900,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 248
+      },
+      {
+        "Name": "Dire Troll",
+        "Type": "Giant",
+        "Exp": 10000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 243
+      },
+      {
+        "Name": "Drow Arachnomancer",
+        "Type": "Humanoid",
+        "Exp": 10000,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 182
+      },
+      {
+        "Name": "Drow Favored Consort",
+        "Type": "Humanoid",
+        "Exp": 20000,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 183
+      },
+      {
+        "Name": "Drow House Captain",
+        "Type": "Humanoid",
+        "Exp": 5000,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 184
+      },
+      {
+        "Name": "Drow Inquisitor",
+        "Type": "Humanoid",
+        "Exp": 11500,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 184
+      },
+      {
+        "Name": "Drow Matron Mother",
+        "Type": "Humanoid",
+        "Exp": 25000,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 186
+      },
+      {
+        "Name": "Drow Shadowblade",
+        "Type": "Humanoid",
+        "Exp": 7200,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 187
+      },
+      {
+        "Name": "Duergar Despot",
+        "Type": "Humanoid",
+        "Exp": 8400,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 188
+      },
+      {
+        "Name": "Duergar Hammerer",
+        "Type": "Construct",
+        "Exp": 450,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 188
+      },
+      {
+        "Name": "Duergar Kavalrachni",
+        "Type": "Humanoid",
+        "Exp": 450,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 189
+      },
+      {
+        "Name": "Duergar Mind Master",
+        "Type": "Humanoid",
+        "Exp": 450,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 189
+      },
+      {
+        "Name": "Duergar Screamer",
+        "Type": "Construct",
+        "Exp": 700,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 190
+      },
+      {
+        "Name": "Duergar Soulblade",
+        "Type": "Humanoid",
+        "Exp": 200,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 190
+      },
+      {
+        "Name": "Duergar Stone Guard",
+        "Type": "Humanoid",
+        "Exp": 450,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 191
+      },
+      {
+        "Name": "Duergar Warlord",
+        "Type": "Humanoid",
+        "Exp": 2300,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 192
+      },
+      {
+        "Name": "Duergar Xarrorn",
+        "Type": "Humanoid",
+        "Exp": 450,
+        "Environment": ["Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 193
+      },
+      {
+        "Name": "Dybbuk",
+        "Type": "Fiend",
+        "Exp": 1100,
+        "Environment": ["Desert", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 132
+      },
+      {
+        "Name": "Earth Elemental Myrmidon",
+        "Type": "Elemental",
+        "Exp": 2900,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 202
+      },
+      {
+        "Name": "Eidolon",
+        "Type": "Undead",
+        "Exp": 8400,
+        "Environment": ["Coastal", "Desert", "Forest", "Grassland", "Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 194
+      },
+      {
+        "Name": "Elder Oblex",
+        "Type": "Ooze",
+        "Exp": 5900,
+        "Environment": ["Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 219
+      },
+      {
+        "Name": "Elder Tempest",
+        "Type": "Elemental",
+        "Exp": 50000,
+        "Environment": ["Artic", "Coastal", "Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 200
+      },
+      {
+        "Name": "Female Steeder",
+        "Type": "Monstrosity",
+        "Exp": 200,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 238
+      },
+      {
+        "Name": "Fire Elemental Myrmidon",
+        "Type": "Elemental",
+        "Exp": 2900,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 203
+      },
+      {
+        "Name": "Fraz-Urb'luu",
+        "Type": "Fiend",
+        "Exp": 50000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 146
+      },
+      {
+        "Name": "Frost Salamander",
+        "Type": "Elemental",
+        "Exp": 5000,
+        "Environment": ["Artic"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 223
+      },
+      {
+        "Name": "Geryon",
+        "Type": "Fiend",
+        "Exp": 41000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 173
+      },
+      {
+        "Name": "Giff",
+        "Type": "Humanoid",
+        "Exp": 700,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 204
+      },
+      {
+        "Name": "Githyanki Gish",
+        "Type": "Humanoid",
+        "Exp": 205,
+        "Environment": ["Desert", "Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 205
+      },
+      {
+        "Name": "Githyanki Kith'rak",
+        "Type": "Humanoid",
+        "Exp": 205,
+        "Environment": ["Desert", "Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 205
+      },
+      {
+        "Name": "Githyanki Supreme Commander",
+        "Type": "Humanoid",
+        "Exp": 206,
+        "Environment": ["Desert", "Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 206
+      },
+      {
+        "Name": "Githzerai Anarch",
+        "Type": "Humanoid",
+        "Exp": 15000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 207
+      },
+      {
+        "Name": "Githzerai Enlightened",
+        "Type": "Humanoid",
+        "Exp": 5900,
+        "Environment": ["Desert", "Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 208
+      },
+      {
+        "Name": "Gloom Weaver",
+        "Type": "Humanoid",
+        "Exp": 5000,
+        "Environment": ["Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 224
+      },
+      {
+        "Name": "Gray Render",
+        "Type": "Monstrosity",
+        "Exp": 8400,
+        "Environment": ["Forest", "Hill"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 209
+      },
+      {
+        "Name": "Graz'zt",
+        "Type": "Fiend",
+        "Exp": 62000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 149
+      },
+      {
+        "Name": "Green Abishai",
+        "Type": "Fiend",
+        "Exp": 13000,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 162
+      },
+      {
+        "Name": "Hellfire Engine",
+        "Type": "Construct",
+        "Exp": 15000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 165
+      },
+      {
+        "Name": "Howler",
+        "Type": "Fiend",
+        "Exp": 3900,
+        "Environment": ["Desert", "Grassland", "Hill", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 210
+      },
+      {
+        "Name": "Hutijin",
+        "Type": "Fiend",
+        "Exp": 33000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 175
+      },
+      {
+        "Name": "Hydroloth",
+        "Type": "Fiend",
+        "Exp": 5000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 249
+      },
+      {
+        "Name": "Iron Cobra",
+        "Type": "Construct",
+        "Exp": 1100,
+        "Environment": ["Forest", "Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 125
+      },
+      {
+        "Name": "Juiblex",
+        "Type": "Fiend",
+        "Exp": 50000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 151
+      },
+      {
+        "Name": "Kruthik Hive Lord",
+        "Type": "Monstrosity",
+        "Exp": 1800,
+        "Environment": ["Desert", "Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 212
+      },
+      {
         "Name": "Leviathan",
         "Type": "Elemental",
         "Exp": 25000,
-        "Environment": ["Underwater", "Coastal"],
+        "Environment": ["Coastal", "Underwater"],
         "Plane": [],
         "Book": "Mordenkainen's Tome of Foes",
         "Page": 198
+      },
+      {
+        "Name": "Male Steeder",
+        "Type": "Monstrosity",
+        "Exp": 50,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 238
+      },
+      {
+        "Name": "Marut",
+        "Type": "Construct",
+        "Exp": 75000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 213
+      },
+      {
+        "Name": "Maurezhi",
+        "Type": "Fiend",
+        "Exp": 2900,
+        "Environment": ["Swamp", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 133
+      },
+      {
+        "Name": "Meazel",
+        "Type": "Humanoid",
+        "Exp": 200,
+        "Environment": ["Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 214
+      },
+      {
+        "Name": "Merregon",
+        "Type": "Fiend",
+        "Exp": 1100,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 166
+      },
+      {
+        "Name": "Merrenoloth",
+        "Type": "Fiend",
+        "Exp": 700,
+        "Environment": ["Coastal"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 250
+      },
+      {
+        "Name": "Moloch",
+        "Type": "Fiend",
+        "Exp": 33000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 177
+      },
+      {
+        "Name": "Molydeus",
+        "Type": "Fiend",
+        "Exp": 33000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 134
+      },
+      {
+        "Name": "Nabassu",
+        "Type": "Fiend",
+        "Exp": 13000,
+        "Environment": ["Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 135
+      },
+      {
+        "Name": "Nagpa",
+        "Type": "Humanoid",
+        "Exp": 215,
+        "Environment": ["Coastal", "Desert", "Forest", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 215
+      },
+      {
+        "Name": "Narzugon",
+        "Type": "Fiend",
+        "Exp": 10000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 167
+      },
+      {
+        "Name": "Nightwalker",
+        "Type": "Undead",
+        "Exp": 25000,
+        "Environment": ["Artic", "Desert", "Swamp", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 216
+      },
+      {
+        "Name": "Nupperibo",
+        "Type": "Fiend",
+        "Exp": 100,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 168
+      },
+      {
+        "Name": "Oaken Bolter",
+        "Type": "Construct",
+        "Exp": 1800,
+        "Environment": ["Forest", "Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 126
+      },
+      {
+        "Name": "Oblex Spawn",
+        "Type": "Ooze",
+        "Exp": 50,
+        "Environment": ["Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 217
+      },
+      {
+        "Name": "Ogre Battering Ram",
+        "Type": "Giant",
+        "Exp": 1100,
+        "Environment": ["Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 220
+      },
+      {
+        "Name": "Ogre Bolt Launcher",
+        "Type": "Giant",
+        "Exp": 450,
+        "Environment": ["Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 220
+      },
+      {
+        "Name": "Ogre Chain Brute",
+        "Type": "Giant",
+        "Exp": 700,
+        "Environment": ["Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 221
+      },
+      {
+        "Name": "Ogre Howdah",
+        "Type": "Giant",
+        "Exp": 450,
+        "Environment": ["Grassland", "Hill"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 221
+      },
+      {
+        "Name": "Oinoloth",
+        "Type": "Fiend",
+        "Exp": 8400,
+        "Environment": ["Desert", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 251
+      },
+      {
+        "Name": "Orcus",
+        "Type": "Fiend",
+        "Exp": 90000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 153
+      },
+      {
+        "Name": "Orthon",
+        "Type": "Fiend",
+        "Exp": 5900,
+        "Environment": ["Desert", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 169
+      },
+      {
+        "Name": "Phoenix",
+        "Type": "Elemental",
+        "Exp": 15000,
+        "Environment": ["Desert", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 199
+      },
+      {
+        "Name": "Red Abishai",
+        "Type": "Fiend",
+        "Exp": 22000,
+        "Environment": ["Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 160
+      },
+      {
+        "Name": "Retriever",
+        "Type": "Construct",
+        "Exp": 11500,
+        "Environment": ["Desert", "Forest", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 222
+      },
+      {
+        "Name": "Rot Troll",
+        "Type": "Giant",
+        "Exp": 5000,
+        "Environment": ["Desert", "Forest", "Swamp", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 244
+      },
+      {
+        "Name": "Rutterkin",
+        "Type": "Fiend",
+        "Exp": 450,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 136
+      },
+      {
+        "Name": "Shadow Dancer",
+        "Type": "Humanoid",
+        "Exp": 2900,
+        "Environment": ["Forest", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 225
+      },
+      {
+        "Name": "Sibriex",
+        "Type": "Fiend",
+        "Exp": 20000,
+        "Environment": ["Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 137
+      },
+      {
+        "Name": "Skulk",
+        "Type": "Humanoid",
+        "Exp": 100,
+        "Environment": ["Coastal", "Forest", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 227
+      },
+      {
+        "Name": "Skull Lord",
+        "Type": "Undead",
+        "Exp": 13000,
+        "Environment": ["Desert", "Swamp", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 230
+      },
+      {
+        "Name": "Soul Monger",
+        "Type": "Humanoid",
+        "Exp": 7200,
+        "Environment": ["Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 226
+      },
+      {
+        "Name": "Spirit Troll",
+        "Type": "Giant",
+        "Exp": 7200,
+        "Environment": ["Coastal", "Forest", "Swamp", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 244
+      },
+      {
+        "Name": "Spring Eladrin",
+        "Type": "Fey",
+        "Exp": 5900,
+        "Environment": ["Forest", "Grassland"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 196
+      },
+      {
+        "Name": "Star Spawn Grue",
+        "Type": "Aberration",
+        "Exp": 50,
+        "Environment": ["Mountain", "Swamp"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 234
+      },
+      {
+        "Name": "Star Spawn Hulk",
+        "Type": "Aberration",
+        "Exp": 5900,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 234
+      },
+      {
+        "Name": "Star Spawn Larva Mage",
+        "Type": "Aberration",
+        "Exp": 15000,
+        "Environment": ["Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 235
+      },
+      {
+        "Name": "Star Spawn Mangler",
+        "Type": "Aberration",
+        "Exp": 1800,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 236
+      },
+      {
+        "Name": "Star Spawn Seer",
+        "Type": "Aberration",
+        "Exp": 10000,
+        "Environment": ["Mountain", "Swamp", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 236
+      },
+      {
+        "Name": "Steel Predator",
+        "Type": "Construct",
+        "Exp": 15000,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 239
+      },
+      {
+        "Name": "Stone Cursed",
+        "Type": "Construct",
+        "Exp": 200,
+        "Environment": ["Desert", "Mountain", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 240
+      },
+      {
+        "Name": "Stone Defender",
+        "Type": "Construct",
+        "Exp": 1100,
+        "Environment": ["Forest", "Grassland", "Hill", "Mountain"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 126
+      },
+      {
+        "Name": "Summer Eladrin",
+        "Type": "Fey",
+        "Exp": 5900,
+        "Environment": ["Desert", "Forest"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 196
+      },
+      {
+        "Name": "Sword Wraith Commander",
+        "Type": "Undead",
+        "Exp": 3900,
+        "Environment": ["Grassland", "Swamp"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 241
+      },
+      {
+        "Name": "Sword Wraith Warrior",
+        "Type": "Undead",
+        "Exp": 700,
+        "Environment": ["Grassland", "Swamp"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 241
+      },
+      {
+        "Name": "The Angry",
+        "Type": "Monstrosity",
+        "Exp": 10000,
+        "Environment": ["Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 231
+      },
+      {
+        "Name": "The Hungry",
+        "Type": "Monstrosity",
+        "Exp": 7200,
+        "Environment": ["Forest", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 232
+      },
+      {
+        "Name": "The Lonely",
+        "Type": "Monstrosity",
+        "Exp": 5000,
+        "Environment": ["Coastal", "Desert", "Mountain", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 232
+      },
+      {
+        "Name": "The Lost",
+        "Type": "Monstrosity",
+        "Exp": 2900,
+        "Environment": ["Artic", "Desert", "Forest", "Mountain", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 233
+      },
+      {
+        "Name": "The Wretched",
+        "Type": "Monstrosity",
+        "Exp": 50,
+        "Environment": ["Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 233
+      },
+      {
+        "Name": "Titivilus",
+        "Type": "Fiend",
+        "Exp": 15000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 179
+      },
+      {
+        "Name": "Tortle",
+        "Type": "Humanoid",
+        "Exp": 50,
+        "Environment": ["Coastal"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 242
+      },
+      {
+        "Name": "Tortle Druid",
+        "Type": "Humanoid",
+        "Exp": 450,
+        "Environment": ["Coastal"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 242
+      },
+      {
+        "Name": "Vampiric Mist",
+        "Type": "Undead",
+        "Exp": 700,
+        "Environment": ["Artic", "Coastal", "Forest", "Grassland", "Mountain", "Swamp", "Underdark", "Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 246
+      },
+      {
+        "Name": "Venom Troll",
+        "Type": "Giant",
+        "Exp": 2900,
+        "Environment": ["Forest", "Swamp", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 245
+      },
+      {
+        "Name": "Wastrilith",
+        "Type": "Fiend",
+        "Exp": 10000,
+        "Environment": ["Coastal", "Swamp", "Underdark", "Underwater"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 139
+      },
+      {
+        "Name": "Water Elemental Myrmidon",
+        "Type": "Elemental",
+        "Exp": 2900,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 203
+      },
+      {
+        "Name": "White Abishai",
+        "Type": "Fiend",
+        "Exp": 2300,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 263
+      },
+      {
+        "Name": "Winter Eladrin",
+        "Type": "Fey",
+        "Exp": 5900,
+        "Environment": ["Artic", "Forest"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 197
+      },
+      {
+        "Name": "Yagnoloth",
+        "Type": "Fiend",
+        "Exp": 7200,
+        "Environment": ["Urban"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 252
+      },
+      {
+        "Name": "Yeenoghu",
+        "Type": "Fiend",
+        "Exp": 62000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 155
+      },
+      {
+        "Name": "Young Kruthik",
+        "Type": "Monstrosity",
+        "Exp": 25,
+        "Environment": ["Desert", "Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 211
+      },
+      {
+        "Name": "Zaratan",
+        "Type": "Elemental",
+        "Exp": 41000,
+        "Environment": ["Desert", "Forest", "Grassland", "Hill", "Mountain", "Underdark"],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 201
+      },
+      {
+        "Name": "Zariel",
+        "Type": "Fiend",
+        "Exp": 90000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 180
+      },
+      {
+        "Name": "Zuggtmoy",
+        "Type": "Fiend",
+        "Exp": 50000,
+        "Environment": [],
+        "Plane": [],
+        "Book": "Mordenkainen's Tome of Foes",
+        "Page": 157
       }
     ]
   }
