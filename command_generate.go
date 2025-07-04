@@ -63,7 +63,7 @@ func commandGenerate(cfg *Config, args ...string) error {
 	// loop through it and add it to the list
 	// making sure to stay within budget and max creatures
 	for {
-		// check iof the totalcreate exceeds the max creatures
+		// check iof the totalcreature exceeds the max creatures
 		if totalCreatures >= cfg.Config.MaxCreatures && cfg.Config.MaxCreatures != 0 {
 			break
 		}
@@ -71,6 +71,11 @@ func commandGenerate(cfg *Config, args ...string) error {
 		// see if we can afford any more creatures
 		canAfford := false
 		for _, c := range creatures.Creature {
+			// if creature has 0 exp, skip it 
+			if c.Exp == 0 {
+				continue
+			}
+
 			// increase the total creatures by 1 and the totalexp by 1 creature (it's exp)
 			projectedCreatures := totalCreatures + 1
 			projectedExp := totalExp + c.Exp
