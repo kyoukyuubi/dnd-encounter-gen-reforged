@@ -34,6 +34,4 @@ json/settings
 json/logs
 
 # the icon files
-*.ico 
-*.rc
 *.syso
