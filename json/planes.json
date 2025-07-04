@@ -1,145 +1,153 @@
 {
-    "planes": [
-        {
-            "name": "Feywild",
-            "category": "Material Realms"
-        },
-        {
-            "name": "Material Plane",
-            "category": "Material Realms"
-        },
-        {
-            "name": "Shadowfell",
-            "category": "Material Realms"
-        },
-        {
-            "name": "Astral Plane",
-            "category": "Transitive Planes"
-        },
-        {
-            "name": "Ethereal Plane",
-            "category": "Transitive Planes"
-        },
-        {
-            "name": "Plane of Water",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Ooze",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Earth",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Magma",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Fire",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Ashe",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Air",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Plane of Ice",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Elemental Chaos",
-            "category": "Inner Planes"
-        },
-        {
-            "name": "Limbo",
-            "category": "Outer Planes",
-            "sub-category": "Neutral Planes"
-        },
-        {
-            "name": "Mechanus",
-            "category": "Outer Planes",
-            "sub-category": "Neutral Planes"
-        },
-        {
-            "name": "Outlands",
-            "category": "Outer Planes",
-            "sub-category": "Neutral Planes"
-        },
-        {
-            "name": "Arborea",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Arcadia",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Beastlands",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Bytopia",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Elysium",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Mount Celestia",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Ysgard",
-            "category": "Outer Planes",
-            "sub-category": "Upper Planes"
-        },
-        {
-            "name": "Abyss",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        },
-        {
-            "name": "Acheron",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        },
-        {
-            "name": "Carceri",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        },
-        {
-            "name": "Gehenna",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        },
-        {
-            "name": "Hades",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        },
-        {
-            "name": "Nine Hells",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        },
-        {
-            "name": "Pandemonium",
-            "category": "Outer Planes",
-            "sub-category": "Lower Planes"
-        }
-    ]
+   "planes":[
+      {
+         "name":"Feywild",
+         "category":"Material Realms"
+      },
+      {
+         "name":"Material Plane",
+         "category":"Material Realms"
+      },
+      {
+         "name":"Shadowfell",
+         "category":"Material Realms"
+      },
+      {
+         "name":"Astral Plane",
+         "category":"Transitive Planes"
+      },
+      {
+         "name":"Ethereal Plane",
+         "category":"Transitive Planes"
+      },
+      {
+         "name":"Plane of Water",
+         "category":"Inner Planes",
+         "sub-category":"Elemental Planes"
+      },
+      {
+         "name":"Plane of Earth",
+         "category":"Inner Planes",
+         "sub-category":"Elemental Planes"
+      },
+      {
+         "name":"Plane of Fire",
+         "category":"Inner Planes",
+         "sub-category":"Elemental Planes"
+      },
+      {
+         "name":"Plane of Air",
+         "category":"Inner Planes",
+         "sub-category":"Elemental Planes"
+      },
+      {
+         "name":"Plane of Ash",
+         "category":"Inner Planes",
+         "sub-category":"Para-Elemental Planes"
+      },
+      {
+         "name":"Plane of Ice",
+         "category":"Inner Planes",
+         "sub-category":"Para-Elemental Planes"
+      },
+      {
+         "name":"Plane of Ooze",
+         "category":"Inner Planes",
+         "sub-category":"Para-Elemental Planes"
+      },
+      {
+         "name":"Plane of Magma",
+         "category":"Inner Planes",
+         "sub-category":"Para-Elemental Planes"
+      },
+      {
+         "name":"Elemental Chaos",
+         "category":"Inner Planes"
+      },
+      {
+         "name":"Limbo",
+         "category":"Outer Planes",
+         "sub-category":"Neutral Planes"
+      },
+      {
+         "name":"Mechanus",
+         "category":"Outer Planes",
+         "sub-category":"Neutral Planes"
+      },
+      {
+         "name":"Outlands",
+         "category":"Outer Planes",
+         "sub-category":"Neutral Planes"
+      },
+      {
+         "name":"Arborea",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Arcadia",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Beastlands",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Bytopia",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Elysium",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Mount Celestia",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Ysgard",
+         "category":"Outer Planes",
+         "sub-category":"Upper Planes"
+      },
+      {
+         "name":"Abyss",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      },
+      {
+         "name":"Acheron",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      },
+      {
+         "name":"Carceri",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      },
+      {
+         "name":"Gehenna",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      },
+      {
+         "name":"Hades",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      },
+      {
+         "name":"Nine Hells",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      },
+      {
+         "name":"Pandemonium",
+         "category":"Outer Planes",
+         "sub-category":"Lower Planes"
+      }
+   ]
 }
