@@ -32,3 +32,8 @@ json/settings
 
 # the logs folder
 json/logs
+
+# the icon files
+*.ico 
+*.rc
+*.syso
