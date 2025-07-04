@@ -9,7 +9,7 @@ This is a fan project, I am in now way affiliated with Wizards of the coast or D
 
 ## Installation
 
-Head over to the *releases* page and download the latest release. Make sure that the exe and the json folder and filers are inside the same folder. It will throw and error which can useually be found inside json/logs folder. 
+Head over to the [releases](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/releases/tag/Release) page and download the latest release. Make sure that the exe and the json folder and filers are inside the same folder. It will throw and error which can useually be found inside json/logs folder. 
 
 If you don't see a logs folder, do not worry. The Program will make that on it's on, if an error has occurred.
 ## Usage/Examples
@@ -78,7 +78,10 @@ Make sure to close the software with the "exit" command, since it saves your fil
 
 if you want to add your own homebrew things to the generator all you have to do is edit the json! I will go into detail how to do so.
 
-### Adding/editing Creatures
+note: Ignore the code errors on some of the code snippets on this page. JSON files do not support comments, but I added them to help make sense what goes where!
+
+### Adding/editing Creatures    
+
 If you want to add your own creature to one of the included books, open the json in any editor and add to the json, the structure are as follows:
 ```json
 {
@@ -339,3 +342,8 @@ If something happens you want to report/need help with. Please open an [issue](h
 ## Feedback
 
 If you want to leave any feedback, you can do so in [discussions](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/discussions)! If you have any questions feel free to do so in there. There is a category for it.
+
+
+## Credits
+
+Icon is made using Canva!
