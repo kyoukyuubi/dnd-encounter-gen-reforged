@@ -9,8 +9,8 @@ import (
 )
 
 type EncounterSelection struct {
-    Count int
-    Data  jsonHandler.CreatureData
+	Count int
+	Data  jsonHandler.CreatureData
 }
 
 func commandGenerate(cfg *Config, args ...string) error {
@@ -20,7 +20,7 @@ func commandGenerate(cfg *Config, args ...string) error {
 		return err
 	}
 
-	// check if the envirments, plae, types and MinExperience filters are set and call the helper functions to modify 
+	// check if the envirments, plae, types and MinExperience filters are set and call the helper functions to modify
 	// the creatues slice
 
 	// environment Filter
@@ -88,35 +88,35 @@ func commandGenerate(cfg *Config, args ...string) error {
 
 		// if it cant find anything that fits in the budget break out of the loop
 		if !canAfford {
-        	break
-    	}
+			break
+		}
 
 		// select a random creature and store it
-	    sliceLength := len(creatures.Creature)
-    	randomIndex := rand.Intn(sliceLength)
-    	randomCreature := creatures.Creature[randomIndex]
+		sliceLength := len(creatures.Creature)
+		randomIndex := rand.Intn(sliceLength)
+		randomCreature := creatures.Creature[randomIndex]
 
 		// Project what would happen if we add the random creature
-    	projectedCreatures := totalCreatures + 1
-    	projectedExp := totalExp + randomCreature.Exp
-    	mult := getMultiplier(projectedCreatures)
-    	totalCost := int(math.Round(float64(projectedExp) * mult))
+		projectedCreatures := totalCreatures + 1
+		projectedExp := totalExp + randomCreature.Exp
+		mult := getMultiplier(projectedCreatures)
+		totalCost := int(math.Round(float64(projectedExp) * mult))
 
 		// check if the random creature fits in the budget, if not move on
 		if totalCost > budget {
-        	continue 
-    	}
+			continue
+		}
 
 		// if it fits in the budget add it
 		// if it is already in the map, increase the count
-    	if selected, exists := selectedCreatures[randomCreature.Name]; exists {
-    	    selected.Count++
-    	} else {
-    	    selectedCreatures[randomCreature.Name] = &EncounterSelection{Count: 1, Data: randomCreature}
-    	}
+		if selected, exists := selectedCreatures[randomCreature.Name]; exists {
+			selected.Count++
+		} else {
+			selectedCreatures[randomCreature.Name] = &EncounterSelection{Count: 1, Data: randomCreature}
+		}
 		// increase the total creatures and total exp
-    	totalCreatures++
-    	totalExp += randomCreature.Exp
+		totalCreatures++
+		totalExp += randomCreature.Exp
 	}
 
 	// if selected creatures are empty, tell the user
@@ -133,11 +133,11 @@ func commandGenerate(cfg *Config, args ...string) error {
 
 	// loop through and print the result to the user
 	for _, creature := range selectedCreatures {
-    	fmt.Printf("Name:   %s\n", creature.Data.Name)
-    	fmt.Printf("Type:   %s\n", creature.Data.Type)
-    	fmt.Printf("Book:   %s (page %d)\n", creature.Data.Book, creature.Data.Page)
-    	fmt.Printf("Amount: %d\n", creature.Count)
-    	fmt.Println("--------------------------------")
+		fmt.Printf("Name:   %s\n", creature.Data.Name)
+		fmt.Printf("Type:   %s\n", creature.Data.Type)
+		fmt.Printf("Book:   %s (page %d)\n", creature.Data.Book, creature.Data.Page)
+		fmt.Printf("Amount: %d\n", creature.Count)
+		fmt.Println("--------------------------------")
 	}
 
 	displayBudget, err := calcBudget(cfg)
@@ -171,7 +171,7 @@ func filterEnvironment(envirments []string, creatures jsonHandler.Creature) json
 				filtered = append(filtered, creature)
 
 				// break to avoid duplicates
-				break 
+				break
 			}
 		}
 
@@ -205,7 +205,7 @@ func filterPlane(planes []string, creatures jsonHandler.Creature) jsonHandler.Cr
 
 				// break to avoid duplicates
 				break
-			} 
+			}
 		}
 
 		// check if the creatures plane slice is empty, if it as add it. Since that means any
@@ -252,25 +252,25 @@ func filterMinExp(minExp int, creatures jsonHandler.Creature) jsonHandler.Creatu
 }
 
 func getMultiplier(totalCreaturs int) float64 {
-	// init the multiplier 
+	// init the multiplier
 	var multiplier float64
 
-	// set the correct multiplier 
+	// set the correct multiplier
 	switch {
-		case totalCreaturs == 1:
-			multiplier = 1.0
-		case totalCreaturs == 2:
-			multiplier = 1.5
-		case totalCreaturs >= 3 && totalCreaturs <= 6:
-			multiplier = 2.0
-		case totalCreaturs >= 7 && totalCreaturs <= 10:
-			multiplier = 2.5
-		case totalCreaturs >= 11 && totalCreaturs <= 14:
-			multiplier = 3.0
-		case totalCreaturs >= 15:
-			multiplier = 4.0
-		default:
-			multiplier = 1.0
+	case totalCreaturs == 1:
+		multiplier = 1.0
+	case totalCreaturs == 2:
+		multiplier = 1.5
+	case totalCreaturs >= 3 && totalCreaturs <= 6:
+		multiplier = 2.0
+	case totalCreaturs >= 7 && totalCreaturs <= 10:
+		multiplier = 2.5
+	case totalCreaturs >= 11 && totalCreaturs <= 14:
+		multiplier = 3.0
+	case totalCreaturs >= 15:
+		multiplier = 4.0
+	default:
+		multiplier = 1.0
 	}
 
 	return multiplier

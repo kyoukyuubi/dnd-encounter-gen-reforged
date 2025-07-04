@@ -11,15 +11,15 @@ import (
 
 // the structure of the config file with the json fields
 type JsonConfig struct {
-	Planes []string `json:"planes"`
-	Types []string `json:"types"`
-	Sources []string `json:"sources"`
-	Environments []string `json:"environments"`
-	NumPlayers int `json:"numPlayers"`
-	Level int `json:"level"`
-	MaxCreatures int `json:"maxCreatures"`
-	MinExperience int `json:"minExperience"`
-	Difficulty string `json:"difficulty"`
+	Planes        []string `json:"planes"`
+	Types         []string `json:"types"`
+	Sources       []string `json:"sources"`
+	Environments  []string `json:"environments"`
+	NumPlayers    int      `json:"numPlayers"`
+	Level         int      `json:"level"`
+	MaxCreatures  int      `json:"maxCreatures"`
+	MinExperience int      `json:"minExperience"`
+	Difficulty    string   `json:"difficulty"`
 }
 
 func Init() {
@@ -31,16 +31,16 @@ func Init() {
 	fullpath := filepath.Join(configFolder, filename)
 
 	// make the default struct
-	defaultConfig := JsonConfig {
-		Planes: []string{},
-		Types: []string{},
-		Sources: []string{},
-		Environments: []string{},
-		NumPlayers: 4,
-		Level: 1,
-		MaxCreatures: 0,
+	defaultConfig := JsonConfig{
+		Planes:        []string{},
+		Types:         []string{},
+		Sources:       []string{},
+		Environments:  []string{},
+		NumPlayers:    4,
+		Level:         1,
+		MaxCreatures:  0,
 		MinExperience: 0,
-		Difficulty: "Moderate",
+		Difficulty:    "Moderate",
 	}
 
 	// check if the folder exists, if not, create it

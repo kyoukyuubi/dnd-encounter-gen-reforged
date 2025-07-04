@@ -9,9 +9,9 @@ import (
 
 // the structure of the logs file
 type ErrorFile struct {
-	Time time.Time `json:"time"`
-	Err string `json:"error"`
-	TriggeredCommand string `json:"triggeredCommand"`
+	Time             time.Time `json:"time"`
+	Err              string    `json:"error"`
+	TriggeredCommand string    `json:"triggeredCommand"`
 }
 
 func folderCheck() {
@@ -32,9 +32,9 @@ func LogError(inputErr error, cmd string) {
 	folderCheck()
 
 	// make the struct for the file
-	fileData := ErrorFile {
-		Time: time.Now(),
-		Err: inputErr.Error(),
+	fileData := ErrorFile{
+		Time:             time.Now(),
+		Err:              inputErr.Error(),
 		TriggeredCommand: cmd,
 	}
 

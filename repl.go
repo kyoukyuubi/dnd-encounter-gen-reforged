@@ -86,104 +86,104 @@ func cleanInput(text string) (string, []string) {
 
 // the command struct, stores data about the command and the function, using the signature
 type cliCommand struct {
-	name string
+	name        string
 	description string
-	example string
-	callback func(*Config, ...string) error
+	example     string
+	callback    func(*Config, ...string) error
 }
 
 func getCommands() map[string]cliCommand {
 	// returns a map that stores the command struct with the data and the function name
-	return map[string]cliCommand {
+	return map[string]cliCommand{
 		"help": {
-			name: "help",
+			name:        "help",
 			description: "Displays this help menu.",
-			example: "help",
-			callback: commandHelp,
+			example:     "help",
+			callback:    commandHelp,
 		},
 		"list": {
-			name: "list <what to list e.g 'planes'",
+			name:        "list <what to list e.g 'planes'",
 			description: "Lists available values for use in filters. For example, `list types` shows all valid creature types.",
-			example: "list planes",
-			callback: commandList,
+			example:     "list planes",
+			callback:    commandList,
 		},
 		"list-filters": {
-			name: "list-filters",
+			name:        "list-filters",
 			description: "Lists all currently active filters and their values.",
-			example: "list-filters",
-			callback: commandListFilters,
+			example:     "list-filters",
+			callback:    commandListFilters,
 		},
 		"level": {
-			name: "level <number (optional)>",
+			name:        "level <number (optional)>",
 			description: "Sets the desired level. If no level is specified, prints the current level.",
-			example: "level 10",
-			callback: commandLevel,
+			example:     "level 10",
+			callback:    commandLevel,
 		},
 		"party-size": {
-			name: "party-size <number (optional)>",
+			name:        "party-size <number (optional)>",
 			description: "Sets the party size. If no size is specified, prints the current party size.",
-			example: "party-size 6",
-			callback: commandPartySize,
+			example:     "party-size 6",
+			callback:    commandPartySize,
 		},
 		"max-creatures": {
-			name: "max-creatures <number (optional)>",
+			name:        "max-creatures <number (optional)>",
 			description: "Sets the maximum number of creatures allowed (use 0 for no limit). If no amount is specified, prints the current maximum.",
-			example: "max-creatures 5",
-			callback: commandMaxCreatures,
+			example:     "max-creatures 5",
+			callback:    commandMaxCreatures,
 		},
 		"min-exp": {
-			name: "min-exp <number (optional)>",
+			name:        "min-exp <number (optional)>",
 			description: "Sets the minimum experience a creature must have (use 0 to disable). If no amount is specified, prints the current minimum.",
-			example: "min-exp 250",
-			callback: commandMinExp,
+			example:     "min-exp 250",
+			callback:    commandMinExp,
 		},
 		"type": {
-			name: "type <types seperated by comma (optional)>",
+			name:        "type <types seperated by comma (optional)>",
 			description: "Sets one or more desired creature types (separated by commas; default is any). If none are given, prints the current types. To reset, use `any`.",
-			example: "type aberration, ooze",
-			callback: commandType,
+			example:     "type aberration, ooze",
+			callback:    commandType,
 		},
 		"plane": {
-			name: "plane <planes seperated by comma (optional)>",
+			name:        "plane <planes seperated by comma (optional)>",
 			description: "Sets one or more planes (comma-separated; default is any). If none are given, prints the current planes. To reset, use `any`.",
-			example: "plane feywilds, lower planes",
-			callback: commandPlane,
+			example:     "plane feywilds, lower planes",
+			callback:    commandPlane,
 		},
 		"environment": {
-			name: "environment <environments seperated by comma (optional)>",
+			name:        "environment <environments seperated by comma (optional)>",
 			description: "Sets one or more environments (comma-separated; default is any). If none are given, prints the current environments. To reset, use `any`.",
-			example: "environment urban, hill",
-			callback: commandEnvironment,
+			example:     "environment urban, hill",
+			callback:    commandEnvironment,
 		},
 		"source": {
-			name: "source <sources seperated by comma (optional)>",
+			name:        "source <sources seperated by comma (optional)>",
 			description: "Sets one or more sources (comma-separated; default is any). If none are given, prints the current sources. To reset, use `any`.",
-			example: "source Monster Manual 2024",
-			callback: commandSource,
+			example:     "source Monster Manual 2024",
+			callback:    commandSource,
 		},
 		"difficulty": {
-			name: "difficulty <desired difficulty(optional)>",
+			name:        "difficulty <desired difficulty(optional)>",
 			description: "Sets the desired encounter difficulty (default is Moderate). If none is specified, prints the current difficulty.",
-			example: "difficulty high",
-			callback: commandDifficulty,
+			example:     "difficulty high",
+			callback:    commandDifficulty,
 		},
 		"generate": {
-			name: "generate",
+			name:        "generate",
 			description: "Generates a random encounter based on your current filters and settings. Each use creates a new encounter (previous results are not saved).",
-			example: "generate",
-			callback: commandGenerate,
+			example:     "generate",
+			callback:    commandGenerate,
 		},
 		"reset": {
-			name: "reset",
+			name:        "reset",
 			description: "Resets all filters to their default values.",
-			example: "reset",
-			callback: commandReset,
+			example:     "reset",
+			callback:    commandReset,
 		},
 		"exit": {
-			name: "exit",
+			name:        "exit",
 			description: "Safely exits the program and saves your filters.",
-			example: "exit",
-			callback: commandExit,
+			example:     "exit",
+			callback:    commandExit,
 		},
 	}
 }

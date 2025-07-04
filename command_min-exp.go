@@ -39,7 +39,6 @@ func commandMinExp(cfg *Config, args ...string) error {
 		return nil
 	}
 
-
 	// calc the budget
 	budget, err := calcBudget(cfg)
 	if err != nil {

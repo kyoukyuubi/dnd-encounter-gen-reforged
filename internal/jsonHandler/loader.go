@@ -27,7 +27,7 @@ type EnvironmentFile struct {
 
 // structs for the sources.json
 type Source struct {
-	Name string `json:"name"`
+	Name     string `json:"name"`
 	Filename string `json:"filename"`
 }
 
@@ -37,8 +37,8 @@ type SourceFile struct {
 
 // structs for the planes.json
 type PlaneData struct {
-	Name string `json:"name"`
-	Category string `json:"category"`
+	Name        string `json:"name"`
+	Category    string `json:"category"`
 	SubCategory string `json:"sub-category,omitempty"`
 }
 
@@ -48,13 +48,13 @@ type Plane struct {
 
 // struct for creatures
 type CreatureData struct {
-	Name string `json:"name"`
-	Type string `json:"type"`
-	Exp int `json:"Exp"`
+	Name        string   `json:"name"`
+	Type        string   `json:"type"`
+	Exp         int      `json:"Exp"`
 	Environment []string `json:"Environment"`
-	Plane []string `json:"plane"`
-	Book string `json:"book"`
-	Page int `json:"page"`
+	Plane       []string `json:"plane"`
+	Book        string   `json:"book"`
+	Page        int      `json:"page"`
 }
 
 type Creature struct {
@@ -112,7 +112,7 @@ func LoadTypes() ([]string, error) {
 	}
 
 	// create an empty struct
-	var fileContent TypesFile 
+	var fileContent TypesFile
 
 	// unmarshal json data into the struct
 	err = json.Unmarshal(readFile, &fileContent)
@@ -228,7 +228,7 @@ func LoadPlanes() (Plane, error) {
 	if err != nil {
 		return Plane{}, err
 	}
-	
+
 	return fileContent, err
 }
 
@@ -248,23 +248,23 @@ func LoadCreatures(cfgSources []string) (Creature, error) {
 	// loop through and store the full paths in the slice
 	// If cfgSources is empty, include all source files
 	if len(cfgSources) == 0 {
-    	for _, source := range sources.Source {
-        	filePath = append(filePath, dir+source.Filename+".json")
-    	}
+		for _, source := range sources.Source {
+			filePath = append(filePath, dir+source.Filename+".json")
+		}
 	} else {
-    	for _, source := range sources.Source {
-        	for _, cfgSource := range cfgSources {
-            	if source.Name == cfgSource {
-                	path := dir + source.Filename + ".json"
-                	filePath = append(filePath, path)
-            	}
-	        }
-	    }
+		for _, source := range sources.Source {
+			for _, cfgSource := range cfgSources {
+				if source.Name == cfgSource {
+					path := dir + source.Filename + ".json"
+					filePath = append(filePath, path)
+				}
+			}
+		}
 	}
 
 	// check if the filePath is empty, if it is throw and error
 	if len(filePath) == 0 {
-    	return Creature{}, fmt.Errorf("no source files matched your selection: %v", cfgSources)
+		return Creature{}, fmt.Errorf("no source files matched your selection: %v", cfgSources)
 	}
 
 	// make the var that stores the creatures

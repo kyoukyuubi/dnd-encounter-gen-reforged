@@ -10,41 +10,41 @@ import (
 
 func commandList(cfg *Config, args ...string) error {
 	// if no args are provided
-    if len(args) == 0 {
-        return fmt.Errorf("no argument provided")
-    }
+	if len(args) == 0 {
+		return fmt.Errorf("no argument provided")
+	}
 
-    // store the user input for easier use
-    input := args[0]
-    
-    // define valid lists
-    validList := []string{"environments", "planes", "sources", "types"}
-    
-    // find matching list using partial matching
-    var matchedList string
-    for _, list := range validList {
-        if strings.Contains(list, input) {
-            matchedList = list
-            break
-        }
-    }
-    
-    // check if we found a match
-    if matchedList == "" {
-        return fmt.Errorf("unrecognized list: %s", input)
-    }
-    
-    // run function based on what was matched
-    switch matchedList {
-    case "environments":
-        listEnvironments()
-    case "planes":
-        listPlanes()
-    case "sources":
-        listSources()
-    case "types":
-        listTypes()
-    }
+	// store the user input for easier use
+	input := args[0]
+
+	// define valid lists
+	validList := []string{"environments", "planes", "sources", "types"}
+
+	// find matching list using partial matching
+	var matchedList string
+	for _, list := range validList {
+		if strings.Contains(list, input) {
+			matchedList = list
+			break
+		}
+	}
+
+	// check if we found a match
+	if matchedList == "" {
+		return fmt.Errorf("unrecognized list: %s", input)
+	}
+
+	// run function based on what was matched
+	switch matchedList {
+	case "environments":
+		listEnvironments()
+	case "planes":
+		listPlanes()
+	case "sources":
+		listSources()
+	case "types":
+		listTypes()
+	}
 
 	return nil
 }
@@ -98,9 +98,9 @@ func listPlanes() {
 			previousSubCategory = plane.SubCategory
 			fmt.Printf("  %s: \n", plane.SubCategory)
 		} else if plane.SubCategory == "" {
-    		// Reset previousSubCategory when we encounter an item with no subcategory
-    		previousSubCategory = ""
-}
+			// Reset previousSubCategory when we encounter an item with no subcategory
+			previousSubCategory = ""
+		}
 
 		if previousSubCategory == "" {
 			fmt.Printf("* %s\n", plane.Name)

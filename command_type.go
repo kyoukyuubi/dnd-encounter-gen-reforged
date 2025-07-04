@@ -69,7 +69,7 @@ func commandType(cfg *Config, args ...string) error {
 			errorOccurred = true
 		}
 	}
-	
+
 	// check if error occurred, if so print a line break for the user to make things easier to read
 	if errorOccurred {
 		fmt.Println("-------------------------------")
