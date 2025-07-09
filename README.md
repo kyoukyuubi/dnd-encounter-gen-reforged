@@ -422,6 +422,31 @@ As you can see, I added `Super Easy` as a difficulty. To attempt to explain the 
 
 Other than that it follows the normal json syntax! 
 
+## Contributing
+
+### Clone the repo
+
+```bash
+git clone https://github.com/kyoukyuubi/dnd-encounter-gen-reforged@latest
+cd dnd-encounter-gen-reforged
+```
+
+### build the project
+
+```bash
+go build
+```
+
+### run the project
+
+```bash
+./dnd-encounter-gen-reforged
+```
+
+### Submit a pull request
+
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
+
 ## Support
 
 If something happens you want to report/need help with. Please open an [issue](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/issues).
