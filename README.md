@@ -2,7 +2,7 @@
 
 ![GitHub release](https://img.shields.io/github/v/release/kyoukyuubi/dnd-encounter-gen-reforged)
 ![GitHub issues](https://img.shields.io/github/issues/kyoukyuubi/dnd-encounter-gen-reforged)
-![License](https://img.shields.io/github/license/kyoukyuubi/dnd-encounter-gen-reforged)
+![License](https://img.shields.io/github/license/kyoukyuubi/dnd-encounter-gen-reforged)(./LICENSE)
 
 A CLI tool that helps DMs generate random encounters for their players. Using the 2024 experience budget rules!
 
