@@ -34,17 +34,20 @@ Currently it only supports windows.
 
 If you don't see a logs folder, do not worry. The Program will make that on its own, if an error has occurred.
 
-## Usage/Examples
+## Quick Start
+ - Download the latest release from the [releases](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/releases) page.
+ - Unzip the files into their own folder, to make sure the .exe and the json/ folder is in the same place.
+ - Run the .exe (windows may warn you, this is normal)
+ - Type the following:
 
-Open the *dnd-encounter-gen.exe* making sure the included json folder is in the same place the exe is and run something like this:
-
-```
+ ```
 level 5
 party-size 6
 generate
-```
+ ```
 
-Which could give you something like so:
+Then you get something like this:
+
 ```
 Encounter Creatures:
 ===================
@@ -82,9 +85,80 @@ Total Creatures: 6
 Total XP Budget Used: 2135
 ```
 
-Use the "help" inside the software to see what commands are available. You can even use the "list" command to see what you can set the different filters to.
+This is your random encounter!
 
-Make sure to close the software with the "exit" command, since it saves your filters in a json within the json/settings folder.
+## Usage
+
+### Filter Commands
+- `level` — Set the party level
+- `party-size` — Set the number of adventurers
+- `max-creatures` — Limit the number of creatures in an encounter
+- `min-exp` — Set the minimum XP value
+- `type`, `plane`, `environment`, `source`, `difficulty` — Set encounter filters
+
+### Utility Commands
+- `list` — Show available options for a category
+- `list-filters` — Display current filters
+- `reset` — Reset all filters to default settings
+
+### Encounter Commands
+- `generate` — Generate a random encounter 
+
+### Help and Exit
+- `help` — Show detailed information about commands
+- `exit` — Save filters and exit the program
+
+### Examples
+
+Listing the available planes
+
+```
+list plane
+```
+
+Setting plane and environment
+
+```
+plane Feywild
+environment Forest
+```
+
+Setting multiple planes and environments
+
+```
+plane feywild, lower planes
+environment forest, urban
+```
+
+Setting a type
+
+```
+type undead
+```
+
+Setting multiple types
+
+```
+type undead, ooze
+```
+
+Once you are happy with your set filters, how to generate an encounter
+
+```
+generate
+```
+
+Reset your filters to default
+
+```
+reset
+```
+
+You can read more about the individual commands using the `help` command!
+
+**Tip:** Remember to use the `exit` command to exit the program, since it saves your last used filters when you do.
+
+Note: the order in which you set the filters doesn't matter.
 
 ## Editing/Adding creature, plane, type, source or difficulty
 
