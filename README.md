@@ -1,18 +1,41 @@
-
 # Dungeons & Dragons 5e Encounter Generator Reforged
+
+![GitHub release](https://img.shields.io/github/v/release/kyoukyuubi/dnd-encounter-gen-reforged)
+![GitHub issues](https://img.shields.io/github/issues/kyoukyuubi/dnd-encounter-gen-reforged)
+![License](https://img.shields.io/github/license/kyoukyuubi/dnd-encounter-gen-reforged)
+
 A CLI tool that helps DMs generate random encounters for their players. Using the 2024 experience budget rules!
 
-I have made a tool similiar to this in Python, that is why I named this one Reforged! [Link here](https://github.com/kyoukyuubi/dnd-encounter-gen)
+I have made a tool similar to this in Python, that is why I named this one Reforged! [Link here](https://github.com/kyoukyuubi/dnd-encounter-gen)
 
-This is a fan project, I am in now way affiliated with Wizards of the coast or D&D Beyond. 
+This is a fan project, I am in no way affiliated with Wizards of the Coast or D&D Beyond. 
 
+
+## Why?
+
+As a Dungeon Master, I was always frustrated that D&D Beyond didn’t have a quick, easy way to generate random encounters—even though all the creatures are already organized! Since there’s no public API for D&D Beyond, I decided to craft my own encounter generator. By using JSON files, I can customize everything and keep my prep time minimal, freeing me to focus on telling great stories at the table.
+
+## Features
+
+Here’s what this encounter generator brings to your DM toolkit:
+- Generates balanced random encounters for party levels 1–20 using 2024 experience rules
+- Allows for any party size above 0
+- Fully customizable creature, environment, and source files (add your homebrew content easily)
+- Command-line interface for fast, scriptable usage
+- Supports filtering by plane, environment, difficulty, and source book
+- Automatically logs errors for easier debugging
+- Settings persist between sessions for faster workflow
 
 ## Installation
 
-Head over to the [releases](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/releases) page and download the latest release. Make sure that the exe and the json folder and filers are inside the same folder. It will throw and error which can useually be found inside json/logs folder. 
+Head over to the [releases](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/releases) page and download the latest release. Make sure that the .exe and the json/ folder and files are inside the same directory. It will throw an error which can usually be found inside json/logs folder. 
 
-If you don't see a logs folder, do not worry. The Program will make that on it's on, if an error has occurred.
+Currently it only supports windows.
+
+If you don't see a logs folder, do not worry. The Program will make that on its own, if an error has occurred.
+
 ## Usage/Examples
+
 Open the *dnd-encounter-gen.exe* making sure the included json folder is in the same place the exe is and run something like this:
 
 ```
@@ -62,18 +85,7 @@ Total XP Budget Used: 2135
 Use the "help" inside the software to see what commands are available. You can even use the "list" command to see what you can set the different filters to.
 
 Make sure to close the software with the "exit" command, since it saves your filters in a json within the json/settings folder.
-## Features
 
-- Party Size
-- Level 1-20
-- Difficulty
-- Different Planes of Existence
-- Different Environments
-- Minimum Experience
-- Maximum Creatures
-- User defined sources used for generation
-- Supports Homebrew Creatures, Planes, Enviroments and Difficulties
-    - User can add their own by editing the included Json files
 ## Editing/Adding creature, plane, type, source or difficulty
 
 if you want to add your own homebrew things to the generator all you have to do is edit the json! I will go into detail how to do so.
@@ -82,7 +94,7 @@ note: Ignore the code errors on some of the code snippets on this page. JSON fil
 
 ### Adding/editing Creatures    
 
-If you want to add your own creature to one of the included books, open the json in any editor and add to the json, the structure are as follows:
+If you want to add your own creature to one of the included books, open the json in any editor and add to the json, the structure is as follows:
 ```json
 {
     "Creatures": [
@@ -204,7 +216,7 @@ If you want to add your own environment do the following:
 
 ### Adding/editing Types
 
-It works the same was as environments does!
+It works the same way as environments!
 
 ### Adding/editing Planes
 
@@ -339,10 +351,10 @@ Other than that it follows the normal json syntax!
 ## Support
 
 If something happens you want to report/need help with. Please open an [issue](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/issues).
+
 ## Feedback
 
 If you want to leave any feedback, you can do so in [discussions](https://github.com/kyoukyuubi/dnd-encounter-gen-reforged/discussions)! If you have any questions feel free to do so in there. There is a category for it.
-
 
 ## Credits
 
